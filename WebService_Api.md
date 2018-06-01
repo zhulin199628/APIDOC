@@ -2,7 +2,7 @@
 ## 1.UserApi
 本节描述用户可用的API
 
-### 1.1 userLogin
+### 1.1 userLogin   测试
 用户登录界面
 #### 用法
 您的应用程序要想接入到Axalent cloud需调用此接口，成功后会返回userId、securityToken两个参数，userId为当前用户的编号，securityToken为安全令牌，Axalent cloud通过安全令牌来验证每个请求是否为该用户发出的，一个安全令牌有效期为15分钟，如果失效，你需要重新登录来获取另一个安全令牌
