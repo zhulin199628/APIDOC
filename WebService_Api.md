@@ -147,11 +147,8 @@ https://example.axalent.com:8081/zdk/services/zamapi/getUserValueList?secToken=2
 |----|----|
 secToken|Security Token|
 userId|User ID|
-userName|User Name|
 name|Attribute Name|
 value|Attribute Value|
-userId|User ID|
-userName|User Name|
 
 #### Response
 |Response  name|Description|
@@ -422,16 +419,18 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?secToken=2002
 ```
 ### 1.17 createVirtualDevice
 创建虚拟设备
+
 #### 用法
 在Axalent cloud账户下创建一个虚拟设备，此设备不同于实体设备，它的作用在于存储、标识数据，而非直接与实体设备绑定。
-####Parameters
+
+#### Parameters
 |Parameter name|Description|
 |----|----|
 secToken|Security Token|
 userId|User ID|
 typeId|Type ID|
 typeName|Type Name|
-parentId|标识将设备加入到某个设备节点下（可选），例如若parentId=”44783”，创建的设备就会加到44783下面，结果如下：<div></div>|
+parentId|标识将设备加入到某个设备节点下（可选），例如若parentId=”44783”，创建的设备就会加到44783下面，结果如下：<br>```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devId>44783</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>gateway1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>120</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <devId>59048</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>light1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>122</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```</devList>```<br>```</devList> ```|
 attributes|设备属性列表（可选），添加成功后将自动设置设备的属性，例<br>{“name”:”设备1”, “location”:”厨房”}|
 
 #### Response
@@ -733,7 +732,7 @@ userId|User ID|
 deviceId|Device ID|
 deviceName|Device Name|
 typeName|Device Type|
-parentId|标识将设备加入到某个设备节点下（可选），例如若parentId=”44783”，创建的设备就会加到44783下面，结果如下：|
+parentId|标识将设备加入到某个设备节点下（可选），例如若parentId=”44783”，创建的设备就会加到44783下面，结果如下：<br>```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devId>44783</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>gateway1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>120</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <devId>59048</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>light1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>122</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```</devList>```<br>```</devList> ```|
 
 #### Response
 |Response   name|Description|
