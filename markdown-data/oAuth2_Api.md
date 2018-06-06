@@ -34,7 +34,7 @@ https://example.axalent.com/oauth2/authorize?name=allen&password=123456&appId=10
 
 302 &nbsp; &nbsp; https://example.axalent.com/authorize.html?uuid=03d011f1-4f31-4987-993e-24cfde39a125
 
-###  1.2authorizeCode
+###  1.2 authorizeCode
 
 获取授权码
 
