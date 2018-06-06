@@ -6,7 +6,7 @@
 
 ###   1.1 authorize
 
-
+ 
 <strong>Usage</strong>
 
 获取OAuth2安全令牌前，需要验证用户信息、需要授权的第三方应用信息。用户信息包括name、password、appId(Axalent Cloud应用ID)。第三方应用信息包括client_id、redirect_uri、state(可选)。认证成功后，Axalent Cloud会返回302重定向，重定向地址中会包含参数uuid，需取得此uuid来调用authorizeCode API。
