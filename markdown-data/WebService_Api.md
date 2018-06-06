@@ -4,7 +4,7 @@
 
 ### 1.1 userLogin
 用户登录界面
-#### 用法
+#### Usage
 您的应用程序要想接入到Axalent cloud需调用此接口，成功后会返回userId、securityToken两个参数，userId为当前用户的编号，securityToken为安全令牌，Axalent cloud通过安全令牌来验证每个请求是否为该用户发出的，一个安全令牌有效期为15分钟，如果失效，你需要重新登录来获取另一个安全令牌
 
 #### Parameters
@@ -31,7 +31,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/userLogin?name=jason&passwo
 ### 1.2 registerUser
 注册用户接口
  
-#### 用法
+#### Usage
 注册一个Axalent cloud账号，如果您的应用程序没有账户可调用此接口来注册一个Axalent cloud账户，传入手机号参数后调用getVerificationCode接口向手机发送验证码短信，手机凭此短信的验证码进行注册
 
 #### Parameters
@@ -59,7 +59,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/registerUser?appId=2002&pho
 ### 1.3 getVerificationCode
 获取手机短信验证码
 
-#### 用法
+#### Usage
 获取手机短信验证码有两种，1是获取注册用户短信验证码，2是获取忘记密码短信验证码，Axalent cloud会通过这两种类型发送短信验证给用户，用户将短信验证码填入相应的操作接口即可
 #### Parameters
 
@@ -85,7 +85,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getVerificationCode?appId=2
 
 ### 1.4 recoverUserPassword
 恢复用户密码
-#### 用法
+#### Usage
 如果您忘记了Axalent cloud账号的密码可通过此接口来恢复密码，传入手机号参数后调用getVerificationCode接口向手机发送验证码短信，手机凭此短信的验证码进行恢复
 
 #### Parameters
@@ -111,7 +111,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/recoverUserPassword?appId=2
 ### 1.5 getUserValueList
 获取用户属性列表
 
-#### 用法
+#### Usage
 每个Axalent cloud账户都有一个属性列表，此属性列表用来描述当前账户的各种信息，例如：昵称、生日、性别、城市等
 #### Parameters
 |Parameter name|Description|
@@ -140,7 +140,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getUserValueList?secToken=2
 ```
 ### 1.6 setUserAttribute
 设置用户属性
-#### 用法
+#### Usage
 用来设置Axalent cloud账户的属性信息，例如：昵称、性别、城市等等
 #### Parameters
 |Parameter name|Description|
@@ -165,7 +165,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/setUserAttribute?secToken=2
 
 ### 1.7 getUserInfoByName
 根据用户名获取Axalent cloud账户信息
-#### 用法
+#### Usage
 通过用户名来获取某个Axalent cloud的账户信息
 #### Parameters
 |Parameter name|Description|
@@ -189,7 +189,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getUserInfoByName?secToken=
 ```
 ### 1.8 getTouchList
 获取好友申请消息列表
-#### 用法
+#### Usage
 好友申请消息是一个Axalent cloud账户向另一个Axalent cloud账户发送添加好友申请，调用这个接口将获取当前用户所有的好友申请消息
 #### Parameters
 |Parameter name|Description|
@@ -215,7 +215,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getTouchList?secToken=2002-
 ```
 ### 1.9 touchUser
 添加好友申请
-#### 用法
+#### Usage
 向另一个Axalent cloud账户发送添加好友申请，调用这个接口即可
 #### Parameters
 |Parameter name|Description|
@@ -241,7 +241,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/touchUser?secToken=2002-232
 
 ### 1.10 dealTouch
 处理好友申请
-#### 用法
+#### Usage
 处理好友申请接口，收到一个用户的好友申请可以调用此接口去处理好友请求
 #### Parameters
 |Parameter name|Description|
@@ -265,7 +265,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/dealTouch?secToken=2002-232
 ```
 ### 1.11 getContactsList
 获取好友列表
-#### 用法
+#### Usage
 获取当前Axalent cloud账户下的所有好友列表
 #### Parameters
 |Parameter name|Description|
@@ -294,7 +294,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getContactsList?secToken=20
 ```
 ### 1.12 removeContact
 删除联系人
-#### 使用
+#### Usage
 删除当前Axalent cloud账户下的联系人
 #### Parameters
 |Parameter name|Description|
@@ -317,7 +317,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/removeContact?secToken=2002
 ```
 ### 1.13 disableUser 
 管理用户是否可以登录。需要有系统账户权限使用。
-#### 用法
+#### Usage
 由system account 调用，通过此接口可以启动或者禁用某一个普通用户的账户
 #### Parameters
 |Parameter name|Description|
@@ -340,7 +340,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/disableUser ?sysSecToken=
 ```
 ### 1.14 updatePassword 
 更新密码接口
-#### 用法
+#### Usage
 管理员和普通用户均可调用，用来更新密码
 #### Parameters
 |Parameter name|Description|
@@ -364,7 +364,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/updatePassword ?secToken=
 ```
 ### 1.15 getDeviceTypeList
 获取当前Axalent cloud下的所有设备类型列表
-#### 用法
+#### Usage
 Axalent cloud拥有众多设备类型，比如Light、Smoke等类型，通过此接口就能获取Axalent cloud现拥有所有设备类型列表
 #### Parameters
 |Parameter name|Description|
@@ -389,7 +389,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceTypeList?secToken=
 ```
 ### 1.16 getDeviceList
 获取当前Axalent cloud账户下的所有设备列表
-#### 用法
+#### Usage
 每个Axalent cloud账户拥有众多设备，比如Light、Smoke等设备，通过此接口就能获取Axalent cloud账户下有所有设备列表
 #### Parameters
 
@@ -420,7 +420,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?secToken=2002
 ### 1.17 createVirtualDevice
 创建虚拟设备
 
-#### 用法
+#### Usage
 在Axalent cloud账户下创建一个虚拟设备，此设备不同于实体设备，它的作用在于存储、标识数据，而非直接与实体设备绑定。
 
 #### Parameters
@@ -447,7 +447,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/createVirualDevice?secToken
 ```
 ### 1.18 getDeviceAttribute
 获取设备属性
-#### 用法
+#### Usage
 获取Axalent cloud账户下的单个设备属性值
 #### Parameters
 |Parameter name|Description|
@@ -472,7 +472,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttribute?secToken
 ```
 ### 1.19 getDeviceAttributesWithValues
 获取设备属性列表
-#### 用法
+#### Usage
 获取Axalent cloud账户下的设备多个属性值列表
 #### Parameters
 |Parameter name|Description|
@@ -509,7 +509,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValu
 ```
 ### 1.20 setDeviceAttribute
 设置设备属性
-#### 用法
+#### Usage
 设置Axalent cloud账户下的设备属性
 #### Parameters
 |Parameter name|Description|
@@ -534,7 +534,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/setDeviceAttribute?secToken
 ```
 ### 1.21 getDeviceTS2
 获取设备历史记录
-#### 用法
+#### Usage
 获取Axalent cloud账户下的设备属性历史记录
 #### Parameters
 |Parameter name|Description|
@@ -575,7 +575,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceTS2?secToken=2002-
 ```
 ### 1.22 getDeviceTS3
 获取多个设备属性的历史记录
-#### 用法
+#### Usage
 获取Axalent cloud账户下的多个设备属性的历史记录，一次性最多返回500条
 #### Parameters
 |Parameter name|Description|
@@ -672,7 +672,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceTS3?secToken=2002-
 ```
 ### 1.23 removeDeviceFromUser
 删除Axalent cloud账户下的设备
-#### 用法
+#### Usage
 传入想要删除设备的编号，在通过此接口删除Axalent cloud账户下的设备
 #### Parameters
 |Parameter name|Description|
@@ -696,7 +696,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/removeDeviceFromUser?secTok
 ```
 ### 1.24 deviceAuth
 设备验证
-#### 用法
+#### Usage
 验证此设备，如果通过则返回设备的编号
 
 #### Parameters
@@ -721,7 +721,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/deviceAuth?secToken=2002-23
 
 ### 1.25 addDeviceToUser
 添加设备到用户
-#### 用法
+#### Usage
 添加一个设备到Axalent cloud账户下
 
 #### Parameters
@@ -748,7 +748,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/addDeviceToUser?secToken=20
 ```
 ### 1.26 setHistoryAttached
 设置历史记录附加描述
-#### 用法
+#### Usage
 有时候设备的历史过多，但是我们想标识其中的某个历史记录就可以调用此接口
 #### Parameters
 |Parameter name|Description|
@@ -771,7 +771,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/setHistoryAttached?secToken
 ```
 ### 1.27 shareDevice
 分享设备
-#### 用法
+#### Usage
 分享一个设备给另外一个Axalent cloud账户
 
 #### Parameters
@@ -797,7 +797,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/shareDevice?secToken=2002-2
 ```
 ### 1.28 cancelShareDevice
 取消设备分享
-#### 用法
+#### Usage
 取消分享一个设备给另外一个Axalent cloud账户
 #### Parameters
 |Parameter name|Description|
@@ -821,7 +821,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/cancelShareDevice?secToken=
 ```
 ### 1.29 getDeviceUserList
 获取当前设备被分享的所有用户列表 
-#### 用法
+#### Usage
 通过此接口可以获得Axalent cloud的某个设备被分享给了多少用户
 
 #### Parameters
@@ -849,7 +849,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceUserList?secToken=
 ```
 ### 1.30 setMultiDeviceAttributes
 设置多个设备的属性
-#### 用法
+#### Usage
 每个设备拥有多个属性，想要一次性设置多个属性可以使用此接口
 #### Parameters
 |Parameter name|Description|
@@ -873,7 +873,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/setMultiDeviceAttributes?se
 ```
 ### 1.31 getDeviceTS3Count
 获取设备日志的条数
-#### 用法
+#### Usage
 通过此接口可以获得日志的总条数
 #### Parameters
 |Parameter name|Description|
@@ -903,7 +903,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/getDeviceTS3Count?secToke
 本节用来描述管理员可用的API
 ### 2.1 systemLogin
 管理员登录
-#### 用法
+#### Usage
 登录管理员需要调用此接口，成功后会返回appId、userId、securityToken两个参数，userId为用户编号，securityToken为安全令牌，appId为应用程序编号
 #### Parameters
 |Parameter name|Description|
@@ -930,7 +930,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/systemLogin?name=axalenta
 ```
 ### 2.2 createDeviceType
 创建设备类型
-#### 用法
+#### Usage
 通过此接口可以创建设备的类型
 #### Parameters
 |Parameter name|Description|
@@ -953,7 +953,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/createDeviceType?sysSecTo
 ```
 ### 2.3 createDeviceAttribute
 创建设备属性
-#### 用法
+#### Usage
 通过此接口可以设置设备属性
 #### Parameters
 |Parameter name|Description|
@@ -981,7 +981,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/createDeviceAttribute?sys
 ```
 ### 2.4 createCustomAttribute
 创建用户属性
-#### 用法
+#### Usage
 创建用户属性（属性名称，属性显示名称）
 #### Parameters
 |Parameter name|Description|
@@ -1006,7 +1006,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/createCustomAttribute?sys
 ```
 ### 2.5 getCustomAttributes
 获取用户属性
-#### 用法
+#### Usage
 查看用户属性（属性名称，属性显示名称）
 #### Parameters
 |Parameter name|Description|
@@ -1068,7 +1068,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/getCustomAttributes?sysSe
 ```
 ### 2.6 registerDevice
 注册设备
-#### 用法
+#### Usage
 通过此接口可以注册一个设备
 #### Parameters
 |Parameter name|Description|
@@ -1093,7 +1093,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/registerDevice?sysSecToke
 ## 3. SuperAdmin API
 ### 3.1 superLogin
 超级管理员登录
-#### 用法
+#### Usage
 可以查看和设置普通用户和管理员的信息
 #### Parameters
 |Parameter name|Description|
@@ -1120,7 +1120,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/superLogin?name=superadmi
 ```
 ### 3.2 getAppList
 获取app列表
-#### 用法
+#### Usage
 通过此接口可以获取app列表
 #### Parameters
 |Parameter name|Description|
@@ -1204,7 +1204,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/getAppList?supSecToken=1-
 ```
 ### 3.3 createApp
 创建app
-#### 用法
+#### Usage
 通过此接口可以创建一个appId.
 #### Parameters
 |Parameter name|Description|
@@ -1228,7 +1228,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/createApp?supSecToken=1-3
 ```
 ### 3.4 createAppAdmin
 创建管理员
-#### 用法
+#### Usage
 创建管理员的账号和密码
 #### Parameters
 |Parameter name|Description|
@@ -1252,7 +1252,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/createAppAdmin?supSecToke
 ```
 ### 3.5 getAppAdminList
 获取管理员列表
-#### 用法
+#### Usage
 查看管理员账号，管理员编号，是否被禁用
 #### Parameters
 |Parameter name|Description|
@@ -1287,7 +1287,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/getAppAdminList?supSecTok
 ```
 ### 3.6 getSyslog
 获取系统日志
-#### 用法
+#### Usage
 通过此接口可以获取系统日志
 #### Parameters
 |Parameter name|Description|
@@ -1321,7 +1321,7 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/getSyslog?sysSecToken=142
 ```
 ### 3.7 getSyslogCount
 获取系统日志条数
-#### 用法
+#### Usage
 通过此接口可以获取系统日志条数
 #### Parameters
 |Parameter name|Description|
