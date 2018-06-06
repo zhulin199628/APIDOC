@@ -15,7 +15,7 @@
 
 <strong>Parameters</strong>
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 name|用户名|
 password|用户密码|
 appId|Axalent Cloud应用ID|
@@ -45,7 +45,7 @@ https://example.axalent.com/oauth2/authorize?name=allen&password=123456&appId=10
 <strong>Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 uuid|authorize获取到的uuid|
 
 <strong>Response</strong>
@@ -70,7 +70,7 @@ https://example.axalent.com/oauth2/authorizeCode?uuid=03d011f1-4f31-4987-993e-24
 <strong>获取令牌Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 grant_type|必须是“authorization_code”|
 client_id|Axalent Cloud分配的第三方应用ID|
 client_secret|Axalent Cloud分配的第三方应用secre|
@@ -80,7 +80,7 @@ redirect_uri|第三方应用的回调地址|
 <strong>刷新令牌Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 grant_type|必须是“refresh_token”|
 client_id|Axalent Cloud分配的第三方应用ID|
 client_secret|Axalent Cloud分配的第三方应用secret|
@@ -89,7 +89,7 @@ refresh_token|获取OAuth2令牌时返回的refresh_token|
 <strong>Response</strong>
 
 |Key|Value|
-:-: | :-: | :-:
+|----|----|
 access_token|OAuth2安全令牌|
 token_type|为“bearer”|
 expires_in|30天，单位s|
@@ -123,13 +123,13 @@ Axalent Cloud拥有众多设备类型，比如Light、Smoke等类型，通过此
 <strong>Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 accessToken|OAuth2安全令牌|
 
 <strong>Response</strong>
 
 |Response name|Description|
-:-: | :-: | :-:
+|----|----|
 typeNameList|Device ID<br>Device Name<br>Device Display Name|
 
 <strong>Examples</strong>
@@ -158,13 +158,13 @@ https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceTypeList?access
 <strong>Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 accessToken|OAuth2安全令牌|
 
 <strong>Response</strong>
 
 |Response name|Description|
-:-: | :-: | :-:
+|----|----|
 devList|Device ID<br>Device Name<br>Type ID<br>Time of last modification<br>设备权限(1 创建者，2 完全控制，包括分享、读、写设备，3 只能对设备进行读和写，4 只能读取设备信息，5 扩展，6 扩展)<br>presenceInfo 设备状态（1为在线、0为掉线）|
 
 <strong>Examples</strong>
@@ -196,7 +196,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?accessToken=2
 <strong>Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 accessToken|OAuth2安全令牌|
 devId|Device ID|
 deviceTypeId|Device Type ID|
@@ -204,7 +204,7 @@ deviceTypeId|Device Type ID|
 <strong>Response</strong>
 
 |Response name|Description|
-:-: | :-: | :-:
+|----|----|
 typeId|Device Type ID|
 typeName|Device Type Name|
 presenceInfo|Device Status|
@@ -242,7 +242,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValu
 <strong>Parameters</strong>
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 accessToken|OAuth2安全令牌|
 devId|Device ID|
 name|属性名称|
@@ -250,7 +250,7 @@ name|属性名称|
 <strong>Response</strong>
 
 |Response name|Description|
-:-: | :-: | :-:
+|----|----|
 value|属性值|
 updTime|最后更新时间|
 
@@ -277,7 +277,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttribute?accessTo
 
 
 |Parameter name|Description|
-:-: | :-: | :-:
+|----|----|
 accessToken|OAuth2安全令牌|
 devId|设备ID|
 typeId|Type ID|
@@ -288,7 +288,7 @@ value|属性值|
 
 
 |Response name|Description|
-:-: | :-: | :-:
+|----|----|
 retCode|返回值，0表示成功|
 
 <strong>Examples</strong>
