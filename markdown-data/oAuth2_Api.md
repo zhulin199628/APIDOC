@@ -7,13 +7,13 @@
 ###   1.1 authorize
 
  
-<strong>Usage</strong>
+#### Usage
 
 获取OAuth2安全令牌前，需要验证用户信息、需要授权的第三方应用信息。用户信息包括name、password、appId(Axalent Cloud应用ID)。第三方应用信息包括client_id、redirect_uri、state(可选)。认证成功后，Axalent Cloud会返回302重定向，重定向地址中会包含参数uuid，需取得此uuid来调用authorizeCode API。
 
 <strong>PS：</strong>被授权的第三方应用需要事先在Axalent Cloud进行注册，redirect_uri是在注册时由第三方提供，注册成功后会返回该应用的client_id和client_secret。
 
-<strong>Parameters</strong>
+#### Parameters
 |Parameter name|Description|
 |----|----|
 name|用户名|
@@ -24,11 +24,11 @@ response_type|必须为“code”|
 redirect_uri|第三方应用回调地址，须https|
 state|可选，第三方应用验证|
 
-<strong>Response</strong>
+#### Response
 
 302重定向，包含参数uuid
 
-<strong>Example</strong>
+#### Example
 
 https://example.axalent.com/oauth2/authorize?name=allen&password=123456&appId=1001&client_id=1d974df93b8845fb9cb162e5ba937fcb&response_type=code&redirect_uri=https://thirdparty.com
 
@@ -38,21 +38,21 @@ https://example.axalent.com/oauth2/authorize?name=allen&password=123456&appId=10
 
 获取授权码
 
-<strong>Usage</strong>
+#### Usage
 
 根据authorize获得的uuid来获取OAuth2授权码。
 
-<strong>Parameters</strong>
+#### Parameters
 
 |Parameter name|Description|
 |----|----|
 uuid|authorize获取到的uuid|
 
-<strong>Response</strong>
+#### Response
 
 302重定向，包含参数授权码code，如果认证时指定了state，也会包含参数state
 
-<strong>Example</strong>
+#### Example
 
 https://example.axalent.com/oauth2/authorizeCode?uuid=03d011f1-4f31-4987-993e-24cfde39a125
 
@@ -63,11 +63,11 @@ https://example.axalent.com/oauth2/authorizeCode?uuid=03d011f1-4f31-4987-993e-24
 
 获取OAuth2安全令牌。
 
-<strong>Usage</strong>
+#### Usage
 
 根据authorizeCode获取的授权码code获取OAuth2安全令牌access_token，或者使用refresh_token来刷新安全令牌。
 
-<strong>获取令牌Parameters</strong>
+#### 获取令牌Parameters
 
 |Parameter name|Description|
 |----|----|
@@ -77,7 +77,7 @@ client_secret|Axalent Cloud分配的第三方应用secre|
 code|AuthorizeCode获取到的授权码|
 redirect_uri|第三方应用的回调地址|
 
-<strong>刷新令牌Parameters</strong>
+#### 刷新令牌Parameters
 
 |Parameter name|Description|
 |----|----|
@@ -86,7 +86,7 @@ client_id|Axalent Cloud分配的第三方应用ID|
 client_secret|Axalent Cloud分配的第三方应用secret|
 refresh_token|获取OAuth2令牌时返回的refresh_token|
 
-<strong>Response</strong>
+#### Response
 
 |Key|Value|
 |----|----|
@@ -95,7 +95,7 @@ token_type|为“bearer”|
 expires_in|30天，单位s|
 refresh_token|用于刷新OAuth2安全令牌|
 
-<strong>Example</strong>
+#### Example
 
 https://example.axalent.com/oauth2/accessToken?grant_type=authorization_code&client_id=1d974df93b8845fb9cb162e5ba937fcb&client_secret=bad8336aefa64169be438c5e445c03d2&code=DkoF&redirect_uri=https://thirdparty.com
 
@@ -116,23 +116,23 @@ https://example.axalent.com/oauth2/accessToken?grant_type=authorization_code&cli
 
 获取Axalent Cloud下所有的设备类型列表。
 
-<strong>Usage</strong>
+#### Usage
 
 Axalent Cloud拥有众多设备类型，比如Light、Smoke等类型，通过此接口就能获取Axalent Cloud现拥有所有设备类型列表。
 
-<strong>Parameters</strong>
+#### Parameters
 
 |Parameter name|Description|
 |----|----|
 accessToken|OAuth2安全令牌|
 
-<strong>Response</strong>
+#### Response
 
 |Response name|Description|
 |----|----|
 typeNameList|Device ID<br>Device Name<br>Device Display Name|
 
-<strong>Examples</strong>
+#### Examples
 
 https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceTypeList?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178
 
@@ -151,23 +151,22 @@ https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceTypeList?access
 
 获取当前Axalent Cloud账户下的所有设备列表
 
-<strong>Usage</strong>
+#### Usage
 
 每个Axalent Cloud账户拥有众多设备，比如Light、Smoke等设备，通过此接口就能获取Axalent Cloud账户下有所有设备列表
 
-<strong>Parameters</strong>
+#### Parameters
 
 |Parameter name|Description|
 |----|----|
 accessToken|OAuth2安全令牌|
-
-<strong>Response</strong>
+#### Response
 
 |Response name|Description|
 |----|----|
 devList|Device ID<br>Device Name<br>Type ID<br>Time of last modification<br>设备权限(1 创建者，2 完全控制，包括分享、读、写设备，3 只能对设备进行读和写，4 只能读取设备信息，5 扩展，6 扩展)<br>presenceInfo 设备状态（1为在线、0为掉线）|
 
-<strong>Examples</strong>
+#### Examples
 
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178
 
@@ -189,11 +188,11 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?accessToken=2
 
 获取设备属性列表
 
-<strong>Usage</strong>
+#### Usage
 
 获取Axalent Cloud账户下的设备多个属性值列表
 
-<strong>Parameters</strong>
+#### Parameters
 
 |Parameter name|Description|
 |----|----|
@@ -201,7 +200,7 @@ accessToken|OAuth2安全令牌|
 devId|Device ID|
 deviceTypeId|Device Type ID|
 
-<strong>Response</strong>
+#### Response
 
 |Response name|Description|
 |----|----|
@@ -210,7 +209,7 @@ typeName|Device Type Name|
 presenceInfo|Device Status|
 attrList|Attribute Name<br>Display Name<br>Device属性表示是否是设备属性，是则发送到硬件设备并保存到数据库，否则只保存到数据库(1 是，0 否)<br>ts 是否拥有历史记录(1 是，0否)。<br>tsValueType 属性的数据类型<br>value 属性值<br>updTime 属性的更新时间(Unix时间戳)|
 
-<strong>Examples</strong>
+#### Example
 
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValues?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&deviceTypeId=12
 
@@ -235,11 +234,11 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValu
 
 获取设备属性
 
-<strong>Usage</strong>
+#### Usage
 
 获取Axalent Cloud账户下的单个设备的单个属性的值
 
-<strong>Parameters</strong>
+#### Parameters
 
 |Parameter name|Description|
 |----|----|
@@ -247,14 +246,14 @@ accessToken|OAuth2安全令牌|
 devId|Device ID|
 name|属性名称|
 
-<strong>Response</strong>
+#### Response
 
 |Response name|Description|
 |----|----|
 value|属性值|
 updTime|最后更新时间|
 
-<strong>Examples</strong>
+#### Examples
 
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttribute?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&name=open
 
@@ -269,11 +268,11 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttribute?accessTo
 
 设置设备属性
 
-<strong>Usage</strong>
+#### Usage
 
 设置Axalent Cloud账户下的设备属性
 
-<strong>Parameters</strong>
+#### Parameters
 
 
 |Parameter name|Description|
@@ -284,14 +283,14 @@ typeId|Type ID|
 name|属性名称|
 value|属性值|
 
-<strong>Response </strong>
+#### Response
 
 
 |Response name|Description|
 |----|----|
 retCode|返回值，0表示成功|
 
-<strong>Examples</strong>
+#### Examples
 
 https://example.axalent.com:8081/zdk/services/zamapi/setDeviceAttribute?secToken=2002-23214343223&devId=234924&deviceTypeId=15&name=light&value=1
 
