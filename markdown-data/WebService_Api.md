@@ -83,7 +83,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getVerificationCode?appId=2
 </ns1: getVerificationResponse>
 ```
 
-### 1.4 recoverUserPassword
+### 1.4 recoverUserPassword  
 恢复用户密码
 #### Usage
 如果您忘记了Axalent cloud账号的密码可通过此接口来恢复密码，传入手机号参数后调用getVerificationCode接口向手机发送验证码短信，手机凭此短信的验证码进行恢复
