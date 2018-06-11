@@ -1,4 +1,4 @@
-# Axalent Cloud XGM API手册22
+# Axalent Cloud XGM API手册
 
 ## 1.  typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus)
 
@@ -124,7 +124,7 @@ AXA_SUCCESS表示XGM接受请求，结果会在回调函数中返回。其他返
 相对 GMT 的时区，单位：小时
 @param  successCb
 传入一个函数，当获取时间成功之后，此函数会执行。也可以传入NULL。
-@param  failedCb
+@param  failedCb 
 传入一个函数，当获取时间失败之后，此函数会执行。也可以传入NULL。
 @param  data
 传入数据，成功和失败的回调函数会将数据返回。也可以传入NULL。
