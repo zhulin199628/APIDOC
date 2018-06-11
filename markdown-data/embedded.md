@@ -28,7 +28,7 @@ AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)�
 使用AxLogin、AxLogout、AxDelete、AxSetProperty函数将最后一个参数gpointer data用户定义数据传给XGM，当这些操作成功的时候，此函数会被调用。data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty传入，在回调函数中返回
 
 ## 4. typedef gpointer (*UserServerTimeCb)(axa_timestamp* serverTime, gpointer data)
-
+ 
 定义AxGetTime成功回调函数形式，此回调函数可参照如下定义：
 <strong>gpointer UserServerTimeSuccessCb</strong>(axa_timestamp serverTime, gpointer data)
 使用AxGetTime函数会将最后一个参数gpointer data用户定义数据传给XGM，当函数执行成功的时候，此函数会被调用。serverTime是函数返回的时间结构体，可以从中得到当前服务器的格林威治时间。data是用户定义数据，在AxGetTime传入，在回调函数中返回。
