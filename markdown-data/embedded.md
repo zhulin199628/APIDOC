@@ -74,7 +74,7 @@ AXA_SUCCESS表示XGM成功接受子设备登录的操作，设备登录状态改
 @param  devId
 子设备的唯一ID，AxLogin函数传入。
 @param  successCb
-传入一个函数，当设备成功注销之后，此函数会执行。也可以传入NULL。
+传入一个函数，当设备成功注销之后，此函数会执行。也可以传入NULL。   
 @param  failedCb
 传入一个函数，当设备注销失败之后，此函数会执行。也可以传入NULL。
 @param  data
