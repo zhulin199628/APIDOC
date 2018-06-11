@@ -1,0 +1,30 @@
+[
+  {
+    "menuName": "platform",
+    "children": [
+      {
+        "subName": "PlatForm OverView",
+        "value": "/overView?api=overView.md"
+      }
+   
+    ]
+  },
+  {
+    "menuName": "guides",
+    "children": [
+      {
+        "subName": "Web Services Api",
+        "value": "/Api?api=WebService_Api.md"
+      },
+      {
+        "subName": "OAuth Api",
+        "value": "/Api?api=oAuth2_Api.md"
+      },
+
+      {
+        "subName": "Embedded",
+        "value": "/Api?api=embedded.md"
+      }
+    ]
+  }
+]
