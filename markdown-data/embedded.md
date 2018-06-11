@@ -1,4 +1,4 @@
-# Axalent Cloud XGM API手册
+# Axalent Cloud XGM API手册  2
 
 ## 1. typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus) 
 
