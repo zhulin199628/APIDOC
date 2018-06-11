@@ -27,19 +27,19 @@ AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)�
 
 使用AxLogin、AxLogout、AxDelete、AxSetProperty函数将最后一个参数gpointer data用户定义数据传给XGM，当这些操作成功的时候，此函数会被调用。data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty传入，在回调函数中返回
 
-## 4.  typedefgpointer(*UserServerTimeCb(axa_timestamp*serverTime,gpointer data)
+## 4. typedefgpointer(*UserServerTimeCb(axa_timestamp*serverTime,gpointer data)
 
 定义AxGetTime成功回调函数形式，此回调函数可参照如下定义：
 <strong>gpointer UserServerTimeSuccessCb</strong>(axa_timestamp serverTime, gpointer data)
 使用AxGetTime函数会将最后一个参数gpointer data用户定义数据传给XGM，当函数执行成功的时候，此函数会被调用。serverTime是函数返回的时间结构体，可以从中得到当前服务器的格林威治时间。data是用户定义数据，在AxGetTime传入，在回调函数中返回。
 
-## 5.  typedef gpointer (*UserFailedCb)(int errorCode, gpointer data)
+## 5. typedef gpointer (*UserFailedCb)(int errorCode, gpointer data)
 
 定义回调函数形式，AxLogin、AxLogout、AxDelete、AxSetProperty等函数都是异步的，函数返回值只是表示XGM是否接收此次操作。后续由XGM和服务器通信来完成操作，操作结果通过回调函数返回。失败回调函数可参照如下定义：
 <strong>gpointer UserFailedCb</strong>(int errorCode, gpointer data)
 使用AxLogin、AxLogout、AxDelete、AxSetProperty、AxGetTime函数会将最后一个参数gpointer data用户定义数据传给XGM，当这些函数执行失败的时候，此函数会被调用。errorCode是返回的错误码，data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty、AxGetTime传入，在回调函数中返回。
 
-## 6.  6axa_result_eAxInit(AxMsgCallbackFuncpMsgCb,GwConnectcallbackFun pGwConnectCb,const char *workDir)
+## 6. 6axa_result_eAxInit(AxMsgCallbackFuncpMsgCb,GwConnectcallbackFun pGwConnectCb,const char *workDir)
 
 @function
 开始运行XGM，XGM会导入配置文件gw_config.xml中的配置信息，将Gateway登陆到Axalent Cloud，并且和Axalent Cloud保持连接。这个函数应该在程序最开始被调用。
