@@ -1,6 +1,6 @@
 # Axalent Cloud XGM API手册
 
-## 1. typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus)
+## 1. typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus) 
 
 定义回调函数形式，当Gateway与服务器连接状态发生改变时，此回调函数会被调用，可参照如下定义：
 
