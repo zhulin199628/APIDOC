@@ -61,7 +61,7 @@ AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)�
 @param  type
 子设备的类型，是一个字符串，目前服务器有gateway，SL，SSmoke等常用类型。
 @param  changedCb
-传入一个函数，当设备状态改变之后，此函数会执行。也可以传入NULL。
+传入一个函数，当设备状态改变之后，此函数会执行。也可以传入NULL。  
 @param  data
 传入数据，成功和失败的回调函数会将数据返回。也可以传入NULL。
 @return
