@@ -116,7 +116,7 @@ AXA_SUCCESS表示XGM接受请求，结果会在回调函数中返回。其他返
 
 ## 11. axa_result_eAxGetTime(axa_timestamp_t*,int16_ttimezone,userServerTimeCb successCb, UserFailedCb failedCb, gpointer data)
 
-@function
+@function 
 从Axalent Cloud获得当前的时间。
 @param  timestamp
 时间结构体指针
