@@ -9,7 +9,7 @@
 使用AxInit函数将此回调函数函数传递给XGM，当Gateway成功登陆服务器时，此函数会被调用。ConnectStatus是连接状态，成功：True，失败：False。
 AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)也是同样的用法。
 
-### 2. typedef int (*AxMsgCallbackFun)(t_deviceId* , const char* , const char* )
+### 2.  typedef int (*AxMsgCallbackFun)(t_deviceId* , const char* , const char* )
 
 定义回调函数形式，当XGM接收消息属性时，此回调函数会被调用，可参照如下定义：
 
