@@ -39,7 +39,7 @@ AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)�
 <strong>gpointer UserFailedCb</strong>(int errorCode, gpointer data)
 使用AxLogin、AxLogout、AxDelete、AxSetProperty、AxGetTime函数会将最后一个参数gpointer data用户定义数据传给XGM，当这些函数执行失败的时候，此函数会被调用。errorCode是返回的错误码，data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty、AxGetTime传入，在回调函数中返回。
 
-## 6.axa_result_e AxInit(AxMsgCallbackFunc pMsgCb, GwConnectcallbackFun pGwConnectCb,const char *workDir)
+## 6.axa_result_eAxInit(AxMsgCallbackFuncpMsgCb,GwConnectcallbackFun pGwConnectCb,const char *workDir)
 
 @function
 开始运行XGM，XGM会导入配置文件gw_config.xml中的配置信息，将Gateway登陆到Axalent Cloud，并且和Axalent Cloud保持连接。这个函数应该在程序最开始被调用。
