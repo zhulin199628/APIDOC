@@ -1,6 +1,6 @@
 # Axalent Cloud XGM API手册
 
-### 1.typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus)
+### 1.  typedef int (*GwConnectCallbackFun)(gboolean ConnectStatus)
 
 定义回调函数形式，当Gateway与服务器连接状态发生改变时，此回调函数会被调用，可参照如下定义：
 
@@ -20,7 +20,7 @@ AxLogin传入的gpointer (*connectionChangedCb)(gboolean status, gpointer data)�
 当XGM接收到permitjoin属性，会通过回调函数将permitjoin这个attribute和attribute值传递出来，开发者然后进行本地添加设备的操作，将成功添加的设备使用AxLogin函数登录到服务器。如果XGM接收到permitjoin属性，并没有调用AxLogin函数，服务器上是不会添加这个新设备的。
 当XGM接收到deletedevice属性，会通过回调函数将deletedevice这个attribute和attribute值传递出来，开发者然后进行本地删除设备的操作，将成功删除的设备使用AxDelete函数从服务器删除。如果XGM接收到deletedevice属性，并没有调用AxDelete函数，服务器是不会删除设备的。
 
-### 3.typedef gpointer (*UserSuccessCb)(gpointer data)
+### 3.  typedef gpointer (*UserSuccessCb)(gpointer data)
 
 定义回调函数形式，AxLogin、AxLogout、AxDelete、AxSetProperty等函数都是异步的，函数返回值只是表示XGM是否接收此次操作。后续由XGM和服务器通信来完成操作，操作结果通过回调函数返回。成功回调函数可参照如下定义：
 <strong>gpointer UserSuccessCb</strong>(gpointer data)
