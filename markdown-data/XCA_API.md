@@ -1,6 +1,6 @@
 # Axalent Cloud XCA API手册
 
-## 简介
+## 1. 简介
 
 XCA是Axalent Cloud设备端的程序连接库，通常运行在资源有限的设备平台，接入单个设备节点，例如WIFI、GPRS、NB等可联网设备。占用资源少，可为多种不同平台编译程序连接库。  
 
@@ -16,7 +16,7 @@ XCA是Axalent Cloud设备端的程序连接库，通常运行在资源有限的�
 
 #### Parameters
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 status|int|连接状态，连接成功：<strong>TRUE，</strong>断开连接：<strong>FALSE</strong|
 
 #### Return
@@ -33,7 +33,7 @@ status|int|连接状态，连接成功：<strong>TRUE，</strong>断开连接：
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 data|gpointer|用户自定义数据，可为NULL|
 
 #### Return
@@ -50,7 +50,7 @@ gpointer
 
 #### Parameters
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 errorCode|int|错误码
 data|gpointer|用户自定义数据，可为NULL|
 
@@ -69,7 +69,7 @@ gpointer
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 status|gboolean|连接状态，连接成功：<strong>TRUE，</strong>连接断开：<strong>FALSE</strong>|
 data|gpointer|用户自定义数据，可为<strong>NULL</strong>|
 
@@ -88,7 +88,7 @@ gpointer
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 serverTime|st_session_serverTime*|时间结构体：<br>typedef struct{<br>guint16 year;<br>guint16 month;<br>guint16 day;<br>guint16 hour;<br>guint16 minute;<br>guint16 second;<br>}st_session_serverTime;|
 data|gpointer|用户自定义数据，可为<strong>NULL</strong>|
 
@@ -107,7 +107,7 @@ gpointer
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 childId|guint32|一般为0|
 property|char*|服务器下发的设备消息，attribute name+空格+attribute value|
 data|gpointer|用户自定义数据，可为NULL|
@@ -127,7 +127,7 @@ data|gpointer|用户自定义数据，可为NULL|
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 index|int|取值可以是0、1、2，其它值将返回错误|
 lb|const char *|可以是域名，也可以是点分式IP地址|
 
@@ -146,7 +146,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 port|guint16|TCP端口号|
 
 #### Return
@@ -163,7 +163,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 port|guint16|UDP端口号|
 
 #### Return
@@ -181,7 +181,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 statusChangedCb|OnConnectionChangedCb|见2.1|
 
 #### Return
@@ -214,7 +214,7 @@ XCA使用不加密的方式登录设备到服务器。调用此函数成功之�
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session**|会话连接|
 code|char*|设备端code，每个设备都具有自己唯一的code|
 pwd|char*|设备端password，每个设备都有自己的password|
@@ -238,7 +238,7 @@ XCA使用可选(加密/不加密)的方式登录设备到服务器。调用此�
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session**|会话连接|
 code|char*|设备端code，每个设备都具有自己唯一的code|
 pwd|char*|设备端password，每个设备都有自己的password|
@@ -265,7 +265,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 onReceivedPropertyCb|SessionReceivedSinglePropertyCb|见2.6|
 userData|gpointer|用户自定义数据，可为<strong>NULL</strong>|
@@ -285,7 +285,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 
 #### Return
@@ -301,7 +301,7 @@ gboolean，TRUE表示在线，FALSE表示离线。
 获取设备在服务器的设备ID(在服务器的唯一标识)。
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 
 #### Return
@@ -319,7 +319,7 @@ XCA从服务器将设备注销，设备的状态将变成离线。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 successCb|SessionSuccessCb|见2.2，可为NULL|
 failedCb|SessionFailedCb|见2.3，可为NULL|
@@ -340,7 +340,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 property|char*|要上传的设备消息，attribute name+空格+attribute value|
 successCb|SessionSuccessCb|见2.2，可为NULL|
@@ -363,7 +363,7 @@ PS：与aca3_session_sendProperty的区别，当XCA发送设备消息到服务�
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 property|char*|要上传的设备消息，attribute name+空格+attribute value|
 successCb|SessionSuccessCb|见2.2，可为NULL|
@@ -386,7 +386,7 @@ aca3_result_e，ACA3_OK表示成功，其它表示失败。
 #### Parameters
 
 |Parameter name|Type|Description|
-:-: | :-: | :-:
+|----|----|----|
 session|st_session*|aca3_session_login/aca3_session_login_ex执行成功传出的会话连接|
 serverTimeCb|SessionServerTimeCb|见2.5|
 failedCb|SessionFailedCb|见2.3，可为NULL|
