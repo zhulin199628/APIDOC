@@ -1090,3 +1090,34 @@ https://alpha-api.axalent.com:8081/zdk/services/zamapi/registerDevice?sysSecToke
     <devId>1472865</devId>
 </ns1:registerDeviceResponse>
 ```
+
+### 2.7 createNewUser
+创建用户
+
+#### Usage
+
+通过此接口可以创建普通用户
+
+#### Parameters
+|Parameter name|Description|
+|----|----|
+sysSecToken|Security Token|
+name|User Name|
+password|User Password|
+
+#### Response
+|Response  name|Description|
+|----|----|
+userId|User ID|
+
+#### Examples
+
+https://alpha-api.axalent.com:8081/zdk/services/zamapi/createNewUser?
+sysSecToken=1001-366739636-1001?name=gold?password=123456
+
+```
+<ns1:createNewUserResponse xmlns:ns1="http://axalent.com/zamapi/">
+    <userId>1589</userId>
+</ns1:createNewUserResponse>
+```
+
