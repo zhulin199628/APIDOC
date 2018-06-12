@@ -1146,7 +1146,8 @@ retCode|Ret Code (0 means OK)|
 
 https://alpha-api.axalent.com:8081/zdk/services/zamapi/disableUser?
 sysSecToken=1001-366739636-1001&userId=1344&disable=0
-
+```
 <ns1:disableUserResponse xmlns:ns1="http://axalent.com/zamapi/">
     <retCode>0</retCode>
-</ns1:disableUserResponse> 
+</ns1:disableUserResponse>
+```
