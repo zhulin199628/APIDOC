@@ -1121,3 +1121,32 @@ sysSecToken=1001-366739636-1001?name=gold?password=123456
 </ns1:createNewUserResponse>
 ```
 
+### 2.8 disableUser
+
+禁用或启用账户
+
+#### Usage
+
+由system account 调用,通过此接口可以禁用有启用普通用户的账户
+
+#### Parameters
+|Parameter name|Description|
+|----|----|
+sysSecToken|Security Token|
+userId|User ID|
+disable|Disable(0 表示启用，用户可以登录。1 表示禁用，用户不能登录)|
+
+#### Response
+
+|Response  name|Description|
+|----|----|
+retCode|Ret Code (0 means OK)|
+
+#### Examples
+
+https://alpha-api.axalent.com:8081/zdk/services/zamapi/disableUser?
+sysSecToken=1001-366739636-1001&userId=1344&disable=0
+
+<ns1:disableUserResponse xmlns:ns1="http://axalent.com/zamapi/">
+    <retCode>0</retCode>
+</ns1:disableUserResponse>
