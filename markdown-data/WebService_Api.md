@@ -517,7 +517,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValu
 secToken|Security Token|
 devId|Device ID|
 typeId|Type ID|
-name|Device Attribute Name|
+name|Device Attribute Name|  
 value|Device Attribute Value|
 
 #### Response
