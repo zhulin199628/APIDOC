@@ -168,7 +168,7 @@ devList|Device ID<br>Device Name<br>Type ID<br>Time of last modification<br>设�
 
 #### Examples
 
-https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178
+https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceList?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178
 
 ```
 <ns1:getDeviceListResponse xmlns:ns1="http://axalent.com/zamapi/">
@@ -211,7 +211,7 @@ attrList|Attribute Name<br>Display Name<br>Device属性表示是否是设备属�
 
 #### Example
 
-https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValues?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&deviceTypeId=12
+https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceAttributesWithValues?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&deviceTypeId=12
 
 ```
 <ns1:getDeviceAttributesWithValuesResponse xmlns:ns1="http://axalent.com/zamapi/">
@@ -255,7 +255,7 @@ updTime|最后更新时间|
 
 #### Examples
 
-https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttribute?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&name=open
+https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceAttribute?accessToken=2f91ece2-cb66-4b48-b72e-4db4c845c178&devId=2132124&name=open
 
 ```
 <ns1:getDeviceAttributeResponse xmlns:ns1="http://axalent.com/zamapi/">
@@ -292,7 +292,7 @@ retCode|返回值，0表示成功|
 
 #### Examples
 
-https://example.axalent.com:8081/zdk/services/zamapi/setDeviceAttribute?secToken=2002-23214343223&devId=234924&deviceTypeId=15&name=light&value=1
+https://example.axalent.com:8081/oauth2/services/zamapi/setDeviceAttribute?secToken=2002-23214343223&devId=234924&deviceTypeId=15&name=light&value=1
 
 ```
 <ns1:setDeviceAttributeResponse xmlns:ns1="http://axalent.com/zamapi/">
