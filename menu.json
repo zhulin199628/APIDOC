@@ -1,29 +1,40 @@
 [
   {
-    "menuName": "platform",
-    "children": [
-      {
-        "subName": "PlatForm OverView",
-        "value": "/overView?api=overView.md"
-      }
-   
-    ]
+    "menuName": "平台概述",
+    "value": "/overView?api=overView.md",
+    "children": []
   },
   {
-    "menuName": "guides",
+    "menuName": "应用开发",
     "children": [
-      {
-        "subName": "Web Services Api",
+       {
+        "subName": "Web Services API",
         "value": "/Api?api=WebService_Api.md"
       },
       {
-        "subName": "OAuth Api",
+        "subName": "OAuth API",
         "value": "/Api?api=oAuth2_Api.md"
       },
-
       {
-        "subName": "Embedded",
-        "value": "/Api?api=embedded.md"
+        "subName": "iOS SDK",
+        "value": "https://coding.net/u/axalent/p/axalent_sdk_iOS/git"
+      },
+      {
+        "subName": "Android SDK",
+        "value": "https://coding.net/u/axalent/p/axalent_sdk_android/git"
+      }
+    ]
+  },
+  {
+    "menuName": "设备接入",
+    "children": [
+      {
+        "subName": "XGM API",
+        "value": "/Api?api=XGM_API.md"
+      },
+      {
+        "subName":"XCA API",
+        "value":"/Api?api=XCA_API.md"
       }
     ]
   }
