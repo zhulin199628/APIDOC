@@ -1,7 +1,7 @@
 [
   {
     "menuName": "平台概述",
-    "value": "api=overView.md",
+    "value": "overView.md",
     "children": []
   },
   {
@@ -9,11 +9,11 @@
     "children": [
        {
         "subName": "Web Services API",
-        "value": "api=WebService_Api.md"
+        "value": "WebService_Api.md"
       },
       {
         "subName": "OAuth API",
-        "value": "api=oAuth2_Api.md"
+        "value": "oAuth2_Api.md"
       },
       {
         "subName": "iOS SDK",
@@ -30,11 +30,11 @@
     "children": [
       {
         "subName": "XGM API",
-        "value": "api=XGM_API.md"
+        "value": "XGM_API.md"
       },
       {
         "subName":"XCA API",
-        "value":"api=XCA_API.md"
+        "value":"XCA_API.md"
       }
     ]
   }
