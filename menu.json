@@ -43,11 +43,11 @@
     "children": [
       {
         "subName": "Utility 管理工具使用手册",
-        "value": "/Api?api=Utility.md"
+        "value": "Utility.md"
       },
       {
         "subName": "Configurator 用户手册",
-        "value": "/Api?api=Configurator.md"
+        "value": "Configurator.md"
       }
     ]
   }
