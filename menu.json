@@ -7,7 +7,7 @@
   {
     "menuName": "应用开发",
     "children": [
-       {
+      {
         "subName": "Web Services API",
         "value": "WebService_Api.md"
       },
@@ -33,8 +33,21 @@
         "value": "XGM_API.md"
       },
       {
-        "subName":"XCA API",
-        "value":"XCA_API.md"
+        "subName": "XCA API",
+        "value": "XCA_API.md"
+      }
+    ]
+  },
+  {
+    "menuName": "用户手册",
+    "children": [
+      {
+        "subName": "Utility 管理工具使用手册",
+        "value": "/Api?api=Utility.md"
+      },
+      {
+        "subName": "Configurator 用户手册",
+        "value": "/Api?api=Configurator.md"
       }
     ]
   }
