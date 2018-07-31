@@ -39,7 +39,7 @@ int,一般为0
 
 定义回调函数形式，当Gateway与服务器连接状态发生改变时，此类回调函数会被调用，可参照如下定义：
 int GwConnectCallback(gboolean ConnectStatus)
-使用AxInit函数将此回调函数函数传递给XGM，当Gateway成功登陆服务器时，此函数会被调用。ConnectStatus是连接状态，成功：True，失败：False。
+使用AxInit函数将此回调函数传递给XGM，当Gateway成功登陆服务器时，此函数会被调用。ConnectStatus是连接状态，成功：True，失败：False。
 
 #### Parameters
 
@@ -76,7 +76,7 @@ gpointer
 #### Usage
 定义回调函数形式，AxLogin、AxLogout、AxDelete、AxSetProperty等函数都是异步的，函数返回值只是表示XGM是否接收此次操作。后续由XGM和服务器通信来完成操作，操作结果通过此类回调函数返回。成功回调函数可参照如下定义：
 gpointer UserSuccessCb(gpointer data)
-使用AxLogin、AxLogout、AxDelete、AxSetProperty函数将最后一个参数gpointer data用户定义数据传给XGM，当这些操作成功的时候，此函数会被调用。data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty传入，在回调函数中返回。
+使用AxLogin、AxLogout、AxDelete、AxSetProperty函数将最后一个参数gpointer data（用户定义数据）传给XGM，当这些操作成功的时候，此函数会被调用。data是用户定义数据，在AxLogin、AxLogout、AxDelete、AxSetProperty传入，在回调函数中返回。
 
 #### Parameters
 
@@ -92,7 +92,7 @@ gpointer
 函数类型定义：typedef gpointer (*UserServerTimeCb)(axa_timestamp* serverTime, gpointer data)
 
 #### Usage
-定义AxGetTime成功回调函数形式，此回调函数可参照如下定义：
+定义AxGetTime成功的回调函数的形式，此回调函数可参照如下定义：
 gpointer UserServerTimeSuccessCb(axa_timestamp serverTime, gpointer data)
 使用AxGetTime函数会将最后一个参数gpointer data用户定义数据传给XGM，当函数执行成功的时候，此函数会被调用。serverTime是函数返回的时间结构体，可以从中得到当前服务器的格林威治时间。data是用户定义数据，在AxGetTime传入，在回调函数中返回。
 
