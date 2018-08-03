@@ -52,7 +52,7 @@
 
 ### 3. Jpush配置
 
-点击左侧菜单栏Jpush配置选型，在右边表单中输入appKey、masterSec，点击确定即可完成Jpush配置
+点击左侧菜单栏Jpush配置选项，在右边表单中输入appKey、masterSec，点击确定即可完成Jpush配置
 
 ![Jpush配置](../images/c_Jpush.png)
 
