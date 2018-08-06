@@ -177,7 +177,7 @@ send|发送消息|
 
 <strong>场景2：</strong> 在休息日时， 将公司的安防系统自动上防
 
-![avatar](../images/img5.png)
+![avatar](../images/cj2.png)
 
 这些更为复杂的应用都可以通过设备、schedule以及trigger的组合来完成。
 
@@ -200,7 +200,7 @@ send|发送消息|
 
 应用场景： 在家庭中， 爸爸和妈妈有自己独立的账户， 爸爸负责安装客厅里面的设备。这个时候爸爸可以把客厅的权限分享给妈妈。
 
-![avatar](../images/img6.png)
+![avatar](../images/img5.png)
 
 各种权限说明：
 
@@ -231,12 +231,12 @@ send|发送消息|
 
 <strong>应用场景1：</strong>在家庭中，爸爸拥有自己的账户，爸爸创建子账户给小朋友使用。爸爸负责安装了客厅里面的设备。爸爸分享客厅的使用权限给小朋友。 小朋友在自己的房间安装了一个智能灯，小朋友分享智能灯的权限给爸爸。
 
-![avatar](../images/img7.png)
+![avatar](../images/img6.png)
 
 
 <strong>应用场景2：</strong>在楼宇照明中，管理员拥有自己的账户，管理员创建了子账户给企业里面的各个部门使用。管理员负责整栋楼宇的设备安装和规则配置。管理员分享各个部门给部门账户使用。
 
-![avatar](../images/img8.png)
+![avatar](../images/img7.png)
 
 
 ## 4. 树形设备系统
@@ -246,7 +246,7 @@ createVirtualDevice创建虚拟设备时指定父设备ID，可以达到创建�
 
 <strong>应用场景：</strong>在楼宇照明系统中， 存在项目、楼层、房间、网关、灯等层级结构。
 
-![avatar](../images/img9.png)
+![avatar](../images/img8.png)
 
 上述虚拟设备类型：项目、楼层、房间等， 是由项目需求决定。 开发者通过Configurator管理工具来创建这些设备类型并定义属性列表， 之后通过createVirtualDevice来创建虚拟设备实例（Project、Area、Room）。创建子设备实例的时候，指定parentId系统将会将子设备实例挂载到指定父设备实例下。
 
@@ -262,7 +262,7 @@ createVirtualDevice创建虚拟设备时指定父设备ID，可以达到创建�
 1）每种类型子设备的数量不确定
 2）子设备的设备ID由蓝牙Mesh网络决定，服务器端事先无法知道设备ID
 
-![avatar](../images/img10.png)
+![avatar](../images/img9.png)
 
 产品定义确定后，通过Configurator管理工具创建Gateway、Light、Motion、Plug等设备类型并定义属性列表。
 
@@ -282,7 +282,7 @@ createVirtualDevice创建虚拟设备时指定父设备ID，可以达到创建�
 3）网关方案，集成XGM SDK， 通过XGM SDK与服务端通信。操作系统需求：Linux.
 4）多协议扩展（规划中）： 提供服务端Adaptor服务器兼容其他协议接入设备。
 
-![avatar](../images/img11.png)
+![avatar](../images/img10.png)
 
 <strong>APP端：</strong>
 
