@@ -24,7 +24,7 @@ upbytes|Int|设备端发向服务器端的消息字节数|
 downbytes|Int|服务器端发向设备端的消息字节数|
 
 示例：
-![设备消息总数图片](../jupyter-images/device-message.png)
+![设备消息总数图片](../jupyter-images/all_device_message.png)
 
 ###  2.2 获取总的web API消息统计
 
@@ -233,7 +233,7 @@ totaloffline|Int|当天下线的设备数量，同一个设备可计算多次。
 date|Str|日期，例如：2018-2-15|
 
 
-![device-off-on-line](../jupyter-images/device-off-on-line.png)
+![device-off-on-line](../jupyter-images/device-on-off-line.png)
 
 
 ### 2.9 按天获取设备联动统计
@@ -261,7 +261,7 @@ date|Str|日期，例如：2018-2-15|
 
 示例：
 
-![device_trigger](../jupyter-images/device_trigger.png)
+![device_trigger](../jupyter-images/device-trigger.png)
 
 ### 2.10 按天获取设备消息统计
 DataAPI.GetDeviceMsgDay
@@ -286,7 +286,7 @@ date|Str|日期，例如：2018-2-15|
 
 示例：
 
-![device_message](../jupyter-images/device_message.png)
+![device_message](../jupyter-images/device-message.png)
 
 ### 2.11 按天获取Web API消息统计
 
