@@ -36,7 +36,7 @@ DataAPI.GetWebApiMsgApp
 |----|----|----|
 name|list|API名称列表，指定获取哪些API的消息统计。可不传，默认获取所有API。|
 
-返回值：pandas data frame
+返回值：pandas data frame 
 
 
 Index|类型|描述
