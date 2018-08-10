@@ -308,6 +308,6 @@ date|Str|日期，例如：2018-2-15|
 
 
 
-示例： 
+示例：  
 
 ![webApi_message_day](../jupyter-images/webApi_message_day.png)
