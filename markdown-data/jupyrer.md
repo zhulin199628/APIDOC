@@ -32,14 +32,14 @@ DataAPI.GetWebApiMsgApp
 
 参数：
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 name|list|API名称列表，指定获取哪些API的消息统计。可不传，默认获取所有API。|
 
-返回值：pandas data frame 
+返回值：pandas data frame
 
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0~N|Int||
 Columns|类型|描述|
@@ -56,7 +56,7 @@ DataAPI.GetUserLoginHistory
 
 参数：
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 uuid|List|用户ID列表，指定获取哪些用户的登录历史记录。可不传，默认获取所有用户|
 start|Str|查询的起始时间，可不传，默认获取终止时间前30天记录。|
@@ -66,7 +66,7 @@ limit|Int|返回的记录最大条数，可不传，默认最大返回500条记�
 返回值：pandas data frame
 
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int|
 Columns|类型|描述|
@@ -91,14 +91,14 @@ timestamp|Int|登录时间戳|
 DataAPI.GetActiveUserDay
 
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述
+|Index|类型|描述
 |----|----|----|
 0~N|Int||
 Columns|类型|描述|
@@ -116,14 +116,14 @@ DataAPI.GetUserActiveTimeDay
 
 参数：
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame(multi index)
 
-Index|类型|描述
+|Index|类型|描述
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -144,7 +144,7 @@ DataAPI.GetUserLoginLocationDay
 参数：
 
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
@@ -154,7 +154,7 @@ end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 Pandas data frame1：
 
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -165,7 +165,7 @@ date|Str|日期，例如：2018-2-15|
 
 Pandas data frame2：
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -185,7 +185,7 @@ DataAPI.GetDeviceConnectionDay
 参数：
 
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
@@ -193,7 +193,7 @@ end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 返回值：pandas data frame
 
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -215,14 +215,14 @@ DataAPI.GetDeviceIsonlineDay
 
 参数：
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -243,14 +243,14 @@ DataAPI.GetTriggerDay
 参数：
 
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述
+Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -267,14 +267,14 @@ date|Str|日期，例如：2018-2-15|
 DataAPI.GetDeviceMsgDay
 
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -292,14 +292,14 @@ date|Str|日期，例如：2018-2-15|
 
 DataAPI.GetWebApiMsgDay
 
-参数|类型|描述
+|参数|类型|描述|
 |----|----|----|
 start|Str|查询的起始日期，可不传，默认获取终止日期前30天记录。|
 end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
@@ -308,6 +308,6 @@ date|Str|日期，例如：2018-2-15|
 
 
 
-示例：
+示例：  
 
 ![webApi_message_day](../jupyter-images/webApi_message_day.png)
