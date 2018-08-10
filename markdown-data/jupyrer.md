@@ -14,7 +14,7 @@ DataAPI是python3的SDK，通过DataAPI可以从Axalent Cloud获取一些数据�
 
 返回值：pandas data frame
 
-Index|类型|描述
+Index|类型|描述|
 |----|----|----|
 0|Int|返回一条数据||
 Columns|类型|描述|
