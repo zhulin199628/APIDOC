@@ -310,4 +310,8 @@ date|Str|日期，例如：2018-2-15|
 
 示例：  
 
+<<<<<<< HEAD
 ![webApi_message_day](../jupyter-images/webApi_message_day.png)
+=======
+![webApi_message_day](../jupyter-images/webApi_message_day.png)
+>>>>>>> 09d9f40b405be9eb8a8d21e1f4283ba05aeb8b6b
