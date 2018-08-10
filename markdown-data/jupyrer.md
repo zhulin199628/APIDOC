@@ -1,4 +1,4 @@
-#DataAPI User Manual
+# DataAPI User Manual
 
 ## 1、简介
 
@@ -250,7 +250,7 @@ end|Str|查询的终止日期，可不传，默认终止日期为现在。|
 
 返回值：pandas data frame
 
-Index|类型|描述|
+|Index|类型|描述|
 |----|----|----|
 0 ~ N|Int||
 Columns|类型|描述|
