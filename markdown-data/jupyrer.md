@@ -24,7 +24,7 @@ upbytes|Int|设备端发向服务器端的消息字节数|
 downbytes|Int|服务器端发向设备端的消息字节数|
 
 示例：
-![设备消息总数图片](../jupyter-images/all_device_message.png)
+![设备消息总数图片](../images/jupyter.png)
 
 ###  2.2 获取总的web API消息统计
 
