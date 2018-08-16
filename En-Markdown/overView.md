@@ -2,7 +2,7 @@
 
 ## 1.  Overview
 
-![avatar](../images/basic-facts.png)
+![avatar](../En-Images/overView.png)
 
 ###  1) Device side:
 <strong>Device-side design：</strong>Physical equipment (air conditioner, washing machine, etc.). Virtual device (region, scene, group, etc.). Service device (Message flow control device, Schedule service device, Message notification service device)
@@ -76,7 +76,7 @@ Description： Device attribute flow management. Monitoring all specified messag
 When someone passing the aisle, the lights turns on: 
 When the motion of body induction A is Ture, we set the attribute level of light B to 100.
 
-![avatar](../images/img1.png)
+![avatar](../En-Images/img1.png)
 
 There are 3 devices example in this application scenario:
 
@@ -119,7 +119,7 @@ When people leave the room, click the “Leaving Scenario” by phone, then all 
 When the attribute of “Leaving Scenario” activates True, the attribute level of light A will be set to 0. The attribute power of TV B will be set to False and same to attribute power of air-condition C.When people leave the room, click the “Leaving Scenario” by phone, then all the device will be turned off. 
 When the attribute of “Leaving Scenario” activates True, the attribute level of light A will be set to 0. The attribute power of TV B will be set to False and same to attribute power of air-condition C.
 
-![avatar](../images/img2.png)
+![avatar](../En-Images/img2.png)
 
 ###  2.1.2	Schedule ervice device - schedule
 
@@ -140,7 +140,7 @@ Description: Create the schedule device, the activate attribute is triggered to 
 
 Example： When the staff are having lunch break in the office, dimmer the lights and reduce the air condition.
 
-![avatar](../images/img3.png)
+![avatar](../En-Images/img3.png)
 
 ###	2.1.3 JPush Notification - JPushNotification
 
@@ -175,11 +175,11 @@ Description: Used for WeChat applet template message push
 
 <strong>Scene 1：</strong> When the phone has been monitored that it has returned home, the security system will be set to the “Home Mode” .
 
-![avatar](../images/img4.png)
+![avatar](../En-Images/img4.png)
 
 <strong>Scene 2：</strong> Bring the security system online automatically on weekends 
 
-![avatar](../images/cj2.png)
+![avatar](../En-Images/cj2.png)
 
 These complex App all can be done with the combination of devices, schedules, and triggers.
 
@@ -201,7 +201,7 @@ Normal user and normal user can be added to each other as a contact, same as the
 
 Application Scenario: The parents have their separate account for each. If the father has the permission of the device in the lobby, then he can share this permission with mother
 
-![avatar](../images/img5.png)
+![avatar](../En-Images/img5.png)
 
 Various permission descriptions:
 
@@ -230,12 +230,12 @@ Normal user can create the sub-user.
 
 <strong>Application scenario 1：</strong>Father has his own account and he can create a sub-account to the children. For example: He shares the permission of lobby to his children, then the children  install a smart light in the room, now he shares this permission of the light to his father. 
 
-![avatar](../images/img6.png)
+![avatar](../En-Images/img6.png)
 
 
 <strong>Application scenario 2：</strong>In the system of lighting, the admin has his own account and create sub-account to the company for various departments. The admin is responsible for the device installation and configuration of whole building and sharing the permission to all departments. 
 
-![avatar](../images/img7.png)
+![avatar](../En-Images/img7.png)
 
 
 ## 4.  Tree architecture device system
@@ -245,7 +245,7 @@ createVirtualDevice: To create a virtual sub-device, first, create a virtual dev
 
 <strong>Application scenario：</strong>In the lighting system of building, there is a hierarchical architecture of: Project; Area; Room; Gateway; Light.
 
-![avatar](../images/img8.png)
+![avatar](../En-Images/img8.png)
 
 The type of virtual device above: Project, area, room and etc. are determined by project needs. Developer creates the device types and defines the attribute list of these by configuration management tool. Then create the virtual device example (Project, area, room) by ”createVirtualDevice”. When the sub-device example is being created, the “Assign parentId system” will automatically put the sub-device example to the assigned parent-device example. 
 
@@ -261,7 +261,7 @@ The limitation of this application scenario:
 1）The number of each type of sub-device is uncertain.
 2）The device ID of sub-device is determined by Bluetooth Mesh network, the server side cannot know the device ID beforehand.
 
-![avatar](../images/img9.png)
+![avatar](../En-Images/img9.png)
 
 When the definition of the product has been determined, the device type and the attribute list of gateway, light, motion, plug can be created and defined.
 
@@ -281,7 +281,7 @@ Gateway login the server through code, password and AES Key built in the device 
 3）Gateway solution, integrate the XGM SDK to communicate with the server. The requirement of the operation: Linux.
 4）Multi-protocol extension (Afoot)： Provide server-side Adaptor to be compatible with other protocol access device.
 
-![avatar](../images/img10.png)
+![avatar](../En-Images/img10.png)
 
 <strong>APP side：</strong>
 
