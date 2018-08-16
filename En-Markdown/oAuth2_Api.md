@@ -263,7 +263,7 @@ https://example.axalent.com:8081/oauth2/services/zamapi/getDeviceAttribute?acces
 	<updTime>1</updTime>
 </ns1: getDeviceAttributeResponse>
 ```
-
+ 
 ###	2.5	setDeviceAttribute
 
 To set the device attribute
