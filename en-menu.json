@@ -1,0 +1,54 @@
+[
+  {
+    "menuName": "Overview",
+    "value": "overView.md",
+    "children": []
+  },
+  {
+    "menuName": "App Dev",
+    "children": [
+      {
+        "subName": "Web Services API",
+        "value": "WebService_Api.md"
+      },
+      {
+        "subName": "OAuth API",
+        "value": "oAuth2_Api.md"
+      },
+      {
+        "subName": "iOS SDK",
+        "value": "https://coding.net/u/axalent/p/axalent_sdk_iOS/git"
+      },
+      {
+        "subName": "Android SDK",
+        "value": "https://coding.net/u/axalent/p/axalent_sdk_android/git"
+      }
+    ]
+  },
+  { 
+    "menuName": "Device Access",
+    "children": [
+      {
+        "subName": "XGM API",
+        "value": "XGM_API.md"
+      },
+      {
+        "subName": "XCA API",
+        "value": "XCA_API.md"
+      }
+    ]
+  },
+  {
+    "menuName": "User Manual",
+    "children": [
+      {
+        "subName": "Utility Management Tools User Manual",
+        "value": "Utility.md"
+      },
+      {
+        "subName": "Configurator Manual",
+        "value": "Configurator.md"
+      }
+    ]
+  }
+]
