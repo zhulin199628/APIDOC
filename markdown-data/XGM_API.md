@@ -101,7 +101,7 @@ gpointer UserServerTimeSuccessCb(axa_timestamp serverTime, gpointer data)
 |Parameter name|Type|Description|
 |----|----|----|
 serverTime|axa_timestamp|时间结构体：<br>typedef struct{<br>uint16_t year;<br>uint16_t month;<br>uint16_t day;<br>uint16_t hour;<br>uint16_t minute;<br>uint16_t second;<br>}axa_timestamp_t;|
-data|gpointer|gpointer|
+data|gpointer|用户自定义数据，可为NULL|
 
 #### Return
 gpointer
