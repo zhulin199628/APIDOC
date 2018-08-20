@@ -846,7 +846,7 @@ https://example.axalent.com:8081/zdk/services/zamapi/getDeviceUserList?secToken=
 	</user>
 </ns1: getDeviceUserListResponse
 ```
-### 1.30 setMultiDeviceAttributes
+### 2.29 setMultiDeviceAttributes
 Set multiple attributes’ values of a device.
 #### Usage
 Every device has many attributes, to set multiple attributes at one time you can use this API.

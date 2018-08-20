@@ -2,7 +2,7 @@
 
 ## 1.  Overview
 
-![avatar](../En-Images/overView.png)
+![avatar](../En-Images/overView.jpg)
 
 ###  1) Device side:
 <strong>Device-side design：</strong>Physical equipment (air conditioner, washing machine, etc.). Virtual device (region, scene, group, etc.). Service device (Message flow control device, Schedule service device, Message notification service device)
