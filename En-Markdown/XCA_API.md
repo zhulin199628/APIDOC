@@ -12,7 +12,7 @@ Definition of function type：typedef void (*OnConnectionChangedCb)(int status)
 
 #### Usage
 
-Call back function: When the connection status of XCA and server changes, it will be called. The connection status will be released by parameter (Type int)，connection succeeded：<strong>TRUE，</strong>disconnect：<strong>FALSE</strong>
+Call back function, When the connection status of XCA and server changes, it will be called. The connection status will be released by parameter (Type int)，connection succeeded：<strong>TRUE，</strong>disconnect：<strong>FALSE</strong>
 
 #### Parameters
 |Parameter name|Type|Description|
@@ -28,7 +28,7 @@ Definition of function type：typedef gpointer (*SessionSuccessCb)(gpointer data
 
 #### Usage
 
-Callback function: aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions, etc. All these parameter are async. The callback value of parameter only means the XCA has accepted the operation. Then the XCA will communicate with the server and return the result as a callback function, this type of callback function is called to indicate the operation was successful. Data is a custom data, and it will be introduced when these parameters are being called: aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions
+Callback function, aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions, etc. All these parameter are async. The callback value of parameter only means the XCA has accepted the operation. Then the XCA will communicate with the server and return the result as a callback function, this type of callback function is called to indicate the operation was successful. Data is a custom data, and it will be introduced when these parameters are being called: aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Definition of the function type: typedef gpointer (*SessionConnectionChangedCb)(
 
 #### Usage
 
-Callback function: aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOption, all these function are async, the parameter value only means the XCA has accepted the operation. Then the XCA will communicate with server, and return the result as a callback function, this type of callback function is called to indicate the operation was failed. ErrorCode is the error code, data means custom data. It will be introduced when these parameters are being called:aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions
+Callback function, aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOption, all these function are async, the parameter value only means the XCA has accepted the operation. Then the XCA will communicate with server, and return the result as a callback function, this type of callback function is called to indicate the operation was failed. ErrorCode is the error code, data means custom data. It will be introduced when these parameters are being called:aca3_session_login、aca3_session_login_ex、aca3_session_logout、aca3_session_sendProperty、aca3_session_sendPropertyWithOptions
 
 #### Parameters
 |Parameter name|Type|Description|

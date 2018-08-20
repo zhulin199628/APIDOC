@@ -4,7 +4,7 @@
 
 ![avatar](../En-Images/overView.jpg)
 
-###  1) Device side:
+###  1) Device side
 <strong>Device-side design：</strong>Physical equipment (air conditioner, washing machine, etc.). Virtual device (region, scene, group, etc.). Service device (Message flow control device, Schedule service device, Message notification service device)
 
 <strong>Device Access：</strong>Provide a stable and efficient service of device access to access the physical equipment, for example air conditioner, washing machine, etc.
