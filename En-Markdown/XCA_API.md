@@ -17,7 +17,7 @@ Call back function, When the connection status of XCA and server changes, it wil
 #### Parameters
 |Parameter name|Type|Description|
 |----|----|----|
-status|int|The status of connection, connection succeeded：<strong>TRUE，</strong>disconnect：<strong>FALSE</strong|
+status|int|The status of connection, connection succeeded：<strong>TRUE，</strong>disconnect：<strong>FALSE</strong>|
 
 #### Return
 Null
@@ -90,7 +90,7 @@ It is a callback function, after the request time from the server is successful 
 |Parameter name|Type|Description|
 |----|----|----|
 serverTime|st_session_serverTime*|Time istructure：<br>typedef struct{<br>guint16 year;<br>guint16 month;<br>guint16 day;<br>guint16 hour;<br>guint16 minute;<br>guint16 second;<br>}st_session_serverTime;|
-data|gpointer|Custom data，can be<strong>NULL</strong>|
+data|gpointer|Custom data，can be <strong>NULL</strong>|
 
 #### Return
 
@@ -220,7 +220,7 @@ pwd|char*|Device-side password，each device has its own unique password|
 productId|guint16|Product ID，like the appID|
 type|char*|Device type|
 changedCb|SessionConnectionChangedCb|Detailed in 2.4|
-userData|gpointer|Custom data，can be<strong>NULL</strong>|
+userData|gpointer|Custom data，can be <strong>NULL</strong>|
 
 #### Return
 
@@ -229,8 +229,8 @@ aca3_result_e，ACA3_OK means success, otherwise means failure.
 
 Function prototype：aca3_result_e aca3_session_login_ex(st_session** session, char* code, char* pwd, char* aes, guint16 productId, char* productAes, char* type, gboolean isEncrypt, SessionConnectionChangedCb changedCb, gpointer userData)
 
-####Usage
-
+#### Usage
+ 
 After the function introduction is succeed, the XCA can login the server by two different ways: encrypted or unencrypted, and will maintain the connection between device and server. If the device is abnormally dropped, XCA will automatically log in to the server again. 
 
 #### Parameters
@@ -341,9 +341,9 @@ Send a message to server, the message consists of an attribute name and an attri
 |----|----|----|
 session|st_session*|The session connection is sent after aca3_session_login/aca3_session_login_ex is successfully executed.|
 property|char*|The device message needs to be update, attribute name+ space bar+ attribute value|
-successCb|Detailed in 2.2, can be null|
-failedCb|Detailed in 2.3, can be null|
-userData|gpointer|Custom data, can be null|
+successCb|SessionSuccessCb|Detailed in 2.2, can be null|
+failedCb|SessionFailedCb|Detailed in 2.3, can be null|
+userData|gpointer|gpointer|Custom data, can be null|
 
 #### Return
 
@@ -369,7 +369,7 @@ failedCb|SessionFailedCb|Detailed in 2.3, can be null|
 retryMax|guint8|The maximum of repetition: 0~2|
 userData|gpointer|Custom data, can be null|
 
-####Return
+#### Return
 
 aca3_result_e，ACA3_OK means success, otherwise means failure.
 

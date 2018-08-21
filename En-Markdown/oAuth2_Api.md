@@ -161,6 +161,7 @@ Every Axalent Cloud account has abound of devices, like: Light, Smoke and so on.
 |Parameter name|Description|
 |----|----|
 accessToken|OAuth2 access token|
+
 #### Response
 
 |Response name|Description|

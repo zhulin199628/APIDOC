@@ -207,7 +207,7 @@ successCb|UserSuccessCb|Detailed in 2.4, can be null|
 failedCb|UserFailedCb|Detailed in 2.6, can be null|
 data|gpointer|Custom data, can be null|
 
-####Return
+#### Return
 
 AXA_SUCCESS indicates that XGM has received the requirement and the result will be returned with the callback function. Other return value means failure.
 
