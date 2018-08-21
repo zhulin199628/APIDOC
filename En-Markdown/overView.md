@@ -89,7 +89,7 @@ typeID|10001|
 Name|Body Induction Sensor|
 Motion|false|
 
-<strong>灯：</strong>
+<strong>Light：</strong>
 
 |Attribute|Value|
 |----|----|
@@ -127,8 +127,7 @@ When the attribute of “Leaving Scenario” activates True, the attribute level
 |Attribute Name|Description|
 |----|----|
 activate|When the scheduled time is up, this attribute will be set to 1|
-cycle|Set the timing loop. Never means no loop, when the first schedule completes, the attribute of enable will be set to 0
-Day，Week，Month，Year|
+cycle|Set the timing loop. Never means no loop, when the first schedule completes, the attribute of enable will be set to 0 <br>Day，Week，Month，Year|
 datetime|Scheduled time,GMT|
 userData|Save the user data|
 custom_name|Save the schedule name|

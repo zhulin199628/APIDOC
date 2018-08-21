@@ -400,7 +400,7 @@ userId|User ID|
 |Response  name|Description|
 |----|----|
 devList|Device ID<br> Device Name<br>Type ID<br>Time of last modification<br> Ownership(1 Creator of the device, 2 Owner,has complete privilege including share, read, write, 3 read, write, 4 read only, 5 (reserved), 6 (reserved))
-presenceInfo (1 means online 0 means offline)<br>Ownership(1 Creator, 2 Owner，3 read，write，4 read)<br>presenceInfo (1 means online 0 means offline)
+<br>presenceInfo (1 means online 0 means offline)
 
 #### Examples
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?secToken=2002-2321434322&userId=24
@@ -430,8 +430,7 @@ userId|User ID|
 typeId|Type ID|
 typeName|Type Name|
 parentId|Add virtual device under this “parent device”(optional).  For example, suppose parentId=”44783”, a virtual device created can be added under deviceId 44783 as follows：<br>```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devId>44783</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>gateway1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>120</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devList>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <devId>59048</devId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<devName>light1</devName>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<typeId>122</typeId>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` <ownership>1</ownership>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<presenceInfo>1</presenceInfo>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<lastModified>149..</lastModified>```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```</devList>```<br>```</devList> ```|
-attributes|(Optional) Based on typeId and typeName, set corresponding device attributes’ values, after virtual devices is created successfully, it will set these attributes automatically.
-{“name”:”Device1”, “location”: ”kitchen”}|
+attributes|(Optional) Based on typeId and typeName, set corresponding device attributes’ values, after virtual devices is created successfully, it will set these attributes automatically.<br>{“name”:”Device1”, “location”: ”kitchen”}|
 
 #### Response
 |Response  name|Description|
