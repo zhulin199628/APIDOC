@@ -399,8 +399,7 @@ userId|User ID|
 #### Response
 |Response  name|Description|
 |----|----|
-devList|Device ID<br> Device Name<br>Type ID<br>Time of last modification<br> Ownership(1 Creator of the device, 2 Owner,has complete privilege including share, read, write, 3 read, write, 4 read only, 5 (reserved), 6 (reserved))
-<br>presenceInfo (1 means online 0 means offline)
+devList|Device ID<br> Device Name<br>Type ID<br>Time of last modification<br> Ownership(1 Creator of the device, 2 Owner,has complete privilege including share, read, write, 3 read, write, 4 read only, 5 (reserved), 6 (reserved))<br>presenceInfo (1 means online 0 means offline)
 
 #### Examples
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceList?secToken=2002-2321434322&userId=24
@@ -487,6 +486,7 @@ typeId|Device Type ID|
 typeName|Device Type Name|
 presenceInfo|Device Status|
 attrList|Attribute Name<br>Display Name<br>device：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whether attribute value is updated to device or just stored in cloud (1 yes, 0 no)<br>ts：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>tsValueType：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the type of attribute value<br>value：&nbsp;&nbsp;&nbsp;attribute value<br>updTime：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;last update time (Unix time stamp)<br>|
+
 #### Examples
 https://example.axalent.com:8081/zdk/services/zamapi/getDeviceAttributesWithValues?secToken=2002-2321434322&devId=2132124&deviceTypeId=12
 ```
