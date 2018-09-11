@@ -10,7 +10,7 @@ import data_api as DataAPI
 
 ###  2.1 获取总的设备消息统计
 
-DataAPI.GetDeviceMsgsApp
+```DataAPI.GetDeviceMsgsApp```
 
 参数：无
 
