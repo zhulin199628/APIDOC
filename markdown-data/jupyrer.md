@@ -4,11 +4,13 @@
 
 DataAPI是python3的SDK，通过DataAPI可以从Axalent Cloud获取一些数据统计信息。
 
+import data_api as DataAPI  
+
 ## 2、 DataAPI
 
 ###  2.1 获取总的设备消息统计
 
-```DataAPI.GetDeviceMsgApp```
+```DataAPI.GetDeviceMsgsApp```
 
 参数：无
 
@@ -28,7 +30,7 @@ downbytes|Int|服务器端发向设备端的消息字节数|
 
 ###  2.2 获取总的web API消息统计
 
-DataAPI.GetWebApiMsgApp
+``` DataAPI.GetWebApiMsgsApp ``` 
 
 参数：
 
@@ -50,9 +52,37 @@ number|Int|API被调用的次数|
 
 ![webApi_message](../static/jupyter-images/webApi_message.png)
 
-###  2.3 获取用户登录历史记录统计
 
-DataAPI.GetUserLoginHistory
+### 2.3 获取用户信息列表
+
+DataAPI.GetUsersInformation
+
+参数：
+
+|参数|类型|描述|
+|----|----|----|
+|name|List|用户名列表，指定获取哪些用户名的用户信息。可不传，默认获取所有用户。|
+|skip|Int|跳过的用户信息条数，可不填，默认不跳过。|
+|limit|Int|返回用户信息的最大条数，默认500条，必须小于等于10000|
+
+返回值：pandas data frame
+
+
+|Index|类型|描述|
+|----|----|----|
+|0 ~ N|Int||
+|Columns|类型|描述|
+|_id|Int|用户ID|
+|permission|Str|用户级别|
+|user|Str|用户名|
+
+示例：
+![user_info_list](../static/jupyter-images/user_info_list.png)
+
+
+###  2.4 获取用户登录历史记录统计
+
+DataAPI.GetUserLoginHistorys
 
 参数：
 
@@ -86,9 +116,9 @@ timestamp|Int|登录时间戳|
 
 ![login_history](../static/jupyter-images/login_history.png)
 
-###  2.4 按天获取活跃用户数量统计
+###  2.5 按天获取活跃用户数量统计
 
-DataAPI.GetActiveUserDay
+DataAPI.GetActiveUsersDay
 
 
 |参数|类型|描述|
@@ -110,9 +140,9 @@ data|Str|日期，例如：2018-2-15|
 ![user_number](../static/jupyter-images/user_number.png)
 
 
-### 2.5 按天获取用户活跃时间段统计
+### 2.6 按天获取用户活跃时间段统计
 
-DataAPI.GetUserActiveTimeDay
+DataAPI.GetUserActiveTimesDay
 
 参数：
 
@@ -137,7 +167,7 @@ data|Str|日期，例如：2018-2-15|
 
 ![user_active](../static/jupyter-images/user_active.png)
 
-### 2.6 按天获取用户登录地点统计
+### 2.7 按天获取用户登录地点统计
 
 DataAPI.GetUserLoginLocationDay
 
@@ -178,9 +208,9 @@ date|Int|日期，例如：2018-2-15|
 
 ![login_adress](../static/jupyter-images/login_adrress.png)
 
-###  2.7 按天获取设备连接统计
+###  2.8 按天获取设备连接统计
 
-DataAPI.GetDeviceConnectionDay
+DataAPI.GetDeviceConnectionsDay
 
 参数：
 
@@ -209,9 +239,9 @@ date|Str|日期，例如：2018-2-15|
 
 
 
-### 2.8 按天获取设备上下线统计
+### 2.9 按天获取设备上下线统计
 
-DataAPI.GetDeviceIsonlineDay
+DataAPI.GetDeviceIsonlinesDay
 
 参数：
 
@@ -236,9 +266,9 @@ date|Str|日期，例如：2018-2-15|
 ![device-off-on-line](../static/jupyter-images/device-on-off-line.png)
 
 
-### 2.9 按天获取设备联动统计
+### 2.10 按天获取设备联动统计
 
-DataAPI.GetTriggerDay
+DataAPI.GetTriggersDay
 
 参数：
 
@@ -263,8 +293,8 @@ date|Str|日期，例如：2018-2-15|
 
 ![device_trigger](../static/jupyter-images/device-trigger.png)
 
-### 2.10 按天获取设备消息统计
-DataAPI.GetDeviceMsgDay
+### 2.11 按天获取设备消息统计
+DataAPI.GetDeviceMsgsDay
 
 
 |参数|类型|描述|
@@ -288,9 +318,9 @@ date|Str|日期，例如：2018-2-15|
 
 ![device_message](../static/jupyter-images/device-message.png)
 
-### 2.11 按天获取Web API消息统计
+### 2.12 按天获取Web API消息统计
 
-DataAPI.GetWebApiMsgDay
+DataAPI.GetWebApiMsgsDay
 
 |参数|类型|描述|
 |----|----|----|
@@ -310,3 +340,75 @@ date|Str|日期，例如：2018-2-15|
 
 示例：  
 ![webApi_message_day](../static/jupyter-images/webApi_message_day.png)
+
+### 2.13 获取设备类型信息
+
+DataAPI.GetDeviceTypes
+
+参数：
+
+|参数|类型|描述|
+|name|List|通过设备类型名称来获取设备类型信息。可不填，默认获取所有已经存在的设备类型信息。|
+
+返回值：pandas data frame
+
+|Index|类型|描述|
+|----|----|----|
+|0 ~ N|Int||
+|Columns|类型|描述|
+|_id|Int|设备类型ID|
+|name|Str|设备类型名称|
+|displayname|Str|设备类型描述|
+
+示例：
+
+![device_types](../static/jupyter-images/device_types.png)
+
+#### 2.14 获取指定设备类型的所有设备
+
+DataAPI.GetDevicesByTypeId
+
+参数：
+
+
+|Index|类型|描述|
+|----|----|----|
+|typeId|Int|设备类型ID|
+|skip|Int|跳过的设备数量，默认不跳过。|
+|limit|Int|返回的最大设备数量，可不设置，默认为500，最大数量必须小于等于10000|
+
+返回值：pandas data frame
+
+|Index|类型|描述|
+|----|----|----|
+|0 ~ N|Int||
+|Columns|类型|描述|
+|_id|Int|设备类型ID|
+|typeid|Int|设备类型ID|
+|category|Str|设备种类<br/> 1：网关类设备/WIFI类设备<br.> 2：子设备 <br/>3：虚拟设备|
+
+示例：
+
+![device_typesID](../static/jupyter-images/device_typesID.png)
+
+
+
+### 2.15 获取指定时间内设备属性更改次数
+
+DataAPI.GetDeviceAttributeNumber
+
+参数：
+
+|Index|类型|描述|
+|----|----|----|
+|devId|Int|设备类型ID|
+|name|Str|属性名称|
+|value|Str <br/> Int<br/> Bool<br/>|属性值，若不指定，则默认为所有属性值。|
+|start|Str|查询的起始时间，可不传，默认获取终止时间前30天记录。|
+|end|Str|查询的终止时间，可不传，默认终止时间为现在。|
+
+返回值：Int
+
+示例：
+
+![device_attribute_number](../static/jupyter-images/device_attribute_number.png)
