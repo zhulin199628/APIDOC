@@ -30,7 +30,7 @@ downbytes|Int|服务器端发向设备端的消息字节数|
 
 ###  2.2 获取总的web API消息统计
 
-``` DataAPI.GetWebApiMsgsApp ``` 
+```DataAPI.GetWebApiMsgsApp``` 
 
 参数：
 
