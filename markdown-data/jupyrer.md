@@ -31,7 +31,7 @@ downbytes|Int|服务器端发向设备端的消息字节数|
 
 ###  2.2 获取总的web API消息统计
 
-DataAPI.GetWebApiMsgsApp
+```DataAPI.GetWebApiMsgsApp```
 
 参数：
 
@@ -56,7 +56,7 @@ number|Int|API被调用的次数|
 
 ### 2.3 获取用户信息列表
 
-DataAPI.GetUsersInformation
+```DataAPI.GetUsersInformation```
 
 参数：
 
@@ -83,7 +83,7 @@ DataAPI.GetUsersInformation
 
 ###  2.4 获取用户登录历史记录统计
 
-DataAPI.GetUserLoginHistorys
+```DataAPI.GetUserLoginHistorys```
 
 参数：
 
@@ -119,7 +119,7 @@ timestamp|Int|登录时间戳|
 
 ###  2.5 按天获取活跃用户数量统计
 
-DataAPI.GetActiveUsersDay
+```DataAPI.GetActiveUsersDay```
 
 
 |参数|类型|描述|
@@ -143,7 +143,7 @@ data|Str|日期，例如：2018-2-15|
 
 ### 2.6 按天获取用户活跃时间段统计
 
-DataAPI.GetUserActiveTimesDay
+```DataAPI.GetUserActiveTimesDay```
 
 参数：
 
@@ -170,7 +170,7 @@ data|Str|日期，例如：2018-2-15|
 
 ### 2.7 按天获取用户登录地点统计
 
-DataAPI.GetUserLoginLocationDay
+```DataAPI.GetUserLoginLocationDay```
 
 参数：
 
@@ -211,7 +211,7 @@ date|Int|日期，例如：2018-2-15|
 
 ###  2.8 按天获取设备连接统计
 
-DataAPI.GetDeviceConnectionsDay
+```DataAPI.GetDeviceConnectionsDay```
 
 参数：
 
@@ -242,7 +242,7 @@ date|Str|日期，例如：2018-2-15|
 
 ### 2.9 按天获取设备上下线统计
 
-DataAPI.GetDeviceIsonlinesDay
+```DataAPI.GetDeviceIsonlinesDay```
 
 参数：
 
@@ -269,7 +269,7 @@ date|Str|日期，例如：2018-2-15|
 
 ### 2.10 按天获取设备联动统计
 
-DataAPI.GetTriggersDay
+```DataAPI.GetTriggersDay```
 
 参数：
 
@@ -295,7 +295,7 @@ date|Str|日期，例如：2018-2-15|
 ![device_trigger](../static/jupyter-images/device-trigger.png)
 
 ### 2.11 按天获取设备消息统计
-DataAPI.GetDeviceMsgsDay
+```DataAPI.GetDeviceMsgsDay```
 
 
 |参数|类型|描述|
@@ -321,7 +321,7 @@ date|Str|日期，例如：2018-2-15|
 
 ### 2.12 按天获取Web API消息统计
 
-DataAPI.GetWebApiMsgsDay
+```DataAPI.GetWebApiMsgsDay```
 
 |参数|类型|描述|
 |----|----|----|
@@ -344,7 +344,7 @@ date|Str|日期，例如：2018-2-15|
 
 ### 2.13 获取设备类型信息
 
-DataAPI.GetDeviceTypes
+```DataAPI.GetDeviceTypes```
 
 参数：
 
@@ -367,7 +367,7 @@ DataAPI.GetDeviceTypes
 
 #### 2.14 获取指定设备类型的所有设备
 
-DataAPI.GetDevicesByTypeId
+```DataAPI.GetDevicesByTypeId```
 
 参数：
 
@@ -396,7 +396,7 @@ DataAPI.GetDevicesByTypeId
 
 ### 2.15 获取指定时间内设备属性更改次数
 
-DataAPI.GetDeviceAttributeNumber
+```DataAPI.GetDeviceAttributeNumber```
 
 参数：
 
