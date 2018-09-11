@@ -10,7 +10,7 @@ import data_api as DataAPI
 
 ###  2.1 获取总的设备消息统计
 
-```DataAPI.GetDeviceMsgsApp```
+DataAPI.GetDeviceMsgsApp
 
 参数：无
 
@@ -28,9 +28,10 @@ downbytes|Int|服务器端发向设备端的消息字节数|
 示例：
 ![设备消息总数图片](../static/jupyter-images/all_device_message.png)
 
+
 ###  2.2 获取总的web API消息统计
 
-```DataAPI.GetWebApiMsgsApp``` 
+DataAPI.GetWebApiMsgsApp
 
 参数：
 
