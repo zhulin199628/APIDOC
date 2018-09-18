@@ -49,7 +49,7 @@ Columns|类型|描述|
 apiname|Str|API的名称|
 number|Int|API被调用的次数|
 
-示例：
+示例：<br/>
 
 ![webApi_message](../static/jupyter-images/webApi_message.png)
 
@@ -77,7 +77,7 @@ DataAPI.GetUsersInformation
 |permission|Str|用户级别|
 |user|Str|用户名|
 
-示例：
+示例：<br/>
 ![user_info_list](../static/jupyter-images/user_info_list.png)
 
 
@@ -113,7 +113,7 @@ city|Str|登陆地所在城市|
 isp|Str|登陆地所属运营商|
 timestamp|Int|登录时间戳|
 
-示例：
+示例：<br/>
 
 ![login_history](../static/jupyter-images/login_history.png)
 
@@ -137,7 +137,7 @@ number|Int|当天用户登录的数量，同一个用户只计算一次。|
 totalnumber|Int|当天用户登录的次数，同一个用户可计算多次。|
 data|Str|日期，例如：2018-2-15|
 
-示例：
+示例：<br/>
 ![user_number](../static/jupyter-images/user_number.png)
 
 
@@ -164,7 +164,7 @@ totalnumber|Int|当天该时间段用户登录的次数，同一个用户可计�
 data|Str|日期，例如：2018-2-15|
 
 
-示例：
+示例：<br/>
 
 ![user_active](../static/jupyter-images/user_active.png)
 
@@ -205,7 +205,7 @@ number|Int|当天在该城市登录的用户数量，同一个用户只计算一
 totalnumber|Int|当天在该城市登录的用户数量，同一个用户可计算多次。|
 date|Int|日期，例如：2018-2-15|
 
-示例：
+示例：<br/>
 
 ![login_adress](../static/jupyter-images/login_adrress.png)
 
@@ -234,7 +234,7 @@ endpointsmax|Int|当天连接设备数的最大值|
 endpointsmin|Int|当天连接设备数的最小值|
 date|Str|日期，例如：2018-2-15|
 
-示例：
+示例：<br/>
 
 ![device_connect](../static/jupyter-images/device_connect.png)
 
@@ -263,6 +263,7 @@ offline|Int|当天下线的设备数量，同一个设备只计算一次。|
 totaloffline|Int|当天下线的设备数量，同一个设备可计算多次。|
 date|Str|日期，例如：2018-2-15|
 
+示例：<br/>
 
 ![device-off-on-line](../static/jupyter-images/device-on-off-line.png)
 
@@ -290,7 +291,7 @@ targetnumber|Int|当天设备联动目标设备数量，同一个设备只计算
 totaloffline|Int|当天设备联动次数，同一个设备可计算多次。|
 date|Str|日期，例如：2018-2-15|
 
-示例：
+示例：<br/>
 
 ![device_trigger](../static/jupyter-images/device-trigger.png)
 
@@ -316,7 +317,7 @@ upbytes|Int|当天设备端发向服务器端的消息字节数。|
 downbytes|Int|当天服务器端发向设备端的消息字节数。|
 date|Str|日期，例如：2018-2-15|
 
-示例：
+示例：<br/>
 
 ![device_message](../static/jupyter-images/device-message.png)
 
@@ -340,7 +341,7 @@ date|Str|日期，例如：2018-2-15|
 
 
 
-示例：  
+示例：  <br/>
 ![webApi_message_day](../static/jupyter-images/webApi_message_day.png)
 
 ### 2.13 获取设备类型信息
@@ -350,6 +351,7 @@ DataAPI.GetDeviceTypes
 参数：
 
 |参数|类型|描述|
+|----|----|----|
 |name|List|通过设备类型名称来获取设备类型信息。可不填，默认获取所有已经存在的设备类型信息。|
 
 返回值：pandas data frame
@@ -362,7 +364,7 @@ DataAPI.GetDeviceTypes
 |name|Str|设备类型名称|
 |displayname|Str|设备类型描述|
 
-示例：
+示例：<br/>
 
 ![device_types](../static/jupyter-images/device_types.png)
 
@@ -389,7 +391,7 @@ DataAPI.GetDevicesByTypeId
 |typeid|Int|设备类型ID|
 |category|Str|设备种类<br/> 1：网关类设备/WIFI类设备<br.> 2：子设备 <br/>3：虚拟设备|
 
-示例：
+示例：<br/>
 
 ![device_typesID](../static/jupyter-images/device_typesID.png)
 
@@ -411,6 +413,6 @@ DataAPI.GetDeviceAttributeNumber
 
 返回值：Int
 
-示例：
+示例：<br/>
 
 ![device_attribute_number](../static/jupyter-images/device_attribute_number.png)
