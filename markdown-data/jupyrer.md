@@ -25,7 +25,8 @@ down|Int|服务器端发向设备端的消息条数|
 upbytes|Int|设备端发向服务器端的消息字节数|
 downbytes|Int|服务器端发向设备端的消息字节数|
 
-示例：
+示例：<br/>
+
 ![设备消息总数图片](../static/jupyter-images/all_device_message.png)
 
 
@@ -78,6 +79,7 @@ DataAPI.GetUsersInformation
 |user|Str|用户名|
 
 示例：<br/>
+
 ![user_info_list](../static/jupyter-images/user_info_list.png)
 
 
@@ -138,6 +140,7 @@ totalnumber|Int|当天用户登录的次数，同一个用户可计算多次。|
 data|Str|日期，例如：2018-2-15|
 
 示例：<br/>
+
 ![user_number](../static/jupyter-images/user_number.png)
 
 
@@ -342,6 +345,7 @@ date|Str|日期，例如：2018-2-15|
 
 
 示例：  <br/>
+
 ![webApi_message_day](../static/jupyter-images/webApi_message_day.png)
 
 ### 2.13 获取设备类型信息
