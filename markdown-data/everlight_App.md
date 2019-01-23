@@ -8,13 +8,15 @@
 
 第三步：查看刚刚新建的地点是否在地点页正常展示
 
-<img src = "../images/ev_login.png" height = "300" /> <img src = "../images/ev_add_btn.png" height = "300" /> <img src = "../images/ev_add_input.png" height = "300" /> <img src = "../images/ev_add_view.png" height = "300" />
+<img src = "../images/ev_login.png" height = "300" width = "200" /> <img src = "../images/ev_add_btn.png" height = "300" width = "200" /> <img src = "../images/ev_add_input.png" height = "300" width = "200" />
+
+<img src = "../images/ev_add_view.png" height = "300" width = "200" />
 
 # 二、地点的使用
 
 在地点页选择“地点一”，进入地点界面，下面介绍地点的使用
 
-<img src = "../images/ev_address_page.png" height = "300" /> <img src = "../images/ev_address_set.png" height = "300" />
+<img src = "../images/ev_address_page.png" height = "300" width = "200" /> <img src = "../images/ev_address_set.png" height = "300" width = "200" />
 
 
 ## 2.1 设备的使用 
@@ -35,7 +37,9 @@
 
 第六步:点击全区的开关按钮，点击全区的下拉图标，调节全区的冷暖色，验证灯泡是否可以控制
 
-<img src = "../images/ev_light.png" height = "300" /> <img src = "../images/ev_light_add.png" height = "300" /> <img src = "../images/ev_light_search.png" height = "300" /> <img src = "../images/ev_light_start_search.png" height = "300" /> <img src = "../images/ev_light_newset.png" height = "300" /> <img src = "../images/ev_light_setcolor.png" height = "300" />
+<img src = "../images/ev_light.png" height = "300" width = "200" /> <img src = "../images/ev_light_add.png" height = "300" width = "200" /> <img src = "../images/ev_light_search.png" height = "300" width = "200" />
+
+<img src = "../images/ev_light_start_search.png" height = "300" width = "200" /> <img src = "../images/ev_light_newset.png" height = "300" width = "200" /> <img src = "../images/ev_light_setcolor.png" height = "300" width = "200" />
 
 ###  2.1.2 灯泡的修改
 
@@ -49,7 +53,7 @@
 
 第四步：查看设备是否修改成功
 
-<img src = "../images/ev_light.png" height = "300" /> <img src = "../images/ev_light_set2.png" height = "300" /> <img src = "../images/ev_light_edit.png" height = "300" /> 
+<img src = "../images/ev_light.png" height = "300" width = "200" /> <img src = "../images/ev_light_set2.png" height = "300" width = "200" /> <img src = "../images/ev_light_edit.png" height = "300" width = "200" /> 
 
 ###  2.1.3 灯泡的删除
 
@@ -65,7 +69,7 @@
 
 第四步：查看设备是否删除成功
 
-<img src = "../images/ev_light.png" height = "300" /> <img src = "../images/ev_light_set2.png" height = "300" /> <img src = "../images/ev_light_edit.png" height = "300" /> 
+<img src = "../images/ev_light.png" height = "300" width = "200" /> <img src = "../images/ev_light_set2.png" height = "300" width = "200" /> <img src = "../images/ev_light_edit.png" height = "300" width = "200" /> 
 
 ##  2.2 房间的使用
 
@@ -80,7 +84,7 @@
 第四步：进入灯泡，进入房间下的灯泡控制界面，控制灯泡的开关，查看灯泡是否反应正常
 备注：全区的使用和房间的使用模式一样，当控制全区时，房间的状态跟着改变
 
-<img src = "../images/ev_light_setcolor2.png" height = "300" /> <img src = "../images/ev_light_scenes.png" height = "300" /> <img src = "../images/ev_light_controlscenes.png" height = "300" /> 
+<img src = "../images/ev_light_setcolor2.png" height = "300" width = "200" /> <img src = "../images/ev_light_scenes.png" width = "200" height = "300" /> <img src = "../images/ev_light_controlscenes.png" height = "300" width = "200" /> 
 
 ### 2.2.1 新增房间
 
@@ -96,7 +100,9 @@
 
 第五步：控制房间一的开关，打开房间下的下拉图标，调节房间的冷暖色，查看灯是否有反应
 
-<img src = "../images/ev_light_house.png" height = "300" /> <img src = "../images/ev_house_addpage.png" height = "300" /> <img src = "../images/ev_housr_newhouse.png" height = "300" /> <img src = "../images/ev_house_addsuccess.png" height = "300" /> <img src = "../images/ev_house_setlight.png" height = "300" /> <img src = "../images/ev_house_setcolor.png" height = "300" />
+<img src = "../images/ev_light_house.png" height = "300" width = "200" /> <img src = "../images/ev_house_addpage.png" height = "300" width = "200" /> <img src = "../images/ev_housr_newhouse.png" height = "300" width = "200" />
+
+<img src = "../images/ev_house_addsuccess.png" height = "300" width = "200" /> <img src = "../images/ev_house_setlight.png" height = "300" width = "200" /> <img src = "../images/ev_house_setcolor.png" width = "200" height = "300" />
  
 ### 2.2.2 房间的修改
 
@@ -110,7 +116,9 @@
 
 步骤四：查看是否修改成功
 
-<img src = "../images/ev_house_btn.png" height = "300" /> <img src = "../images/ev_house_edit.png" height = "300" /> <img src = "../images/ev_house_editpage.png" height = "300" /> <img src = "../images/ev_house_editsuccess.png" height = "300" />
+<img src = "../images/ev_house_btn.png" height = "300" width = "200" /> <img src = "../images/ev_house_edit.png" width = "200" height = "300" /> <img src = "../images/ev_house_editpage.png" width = "200" height = "300" /> 
+
+<img src = "../images/ev_house_editsuccess.png" height = "300" width = "200" />
 
 ### 2.2.3 房间的删除
 
@@ -122,7 +130,7 @@
 
 步骤三：点击删除房间按钮，然后查看房间是否被成功删除
 
-<img src= "../images/ev_house_btn.png" height ="300" /> <img src ="../images/ev_house_edit.png" height ="300"/> <img src = "../images/ev_house_editpage.png" height = "300" />
+<img src= "../images/ev_house_btn.png" height ="300" width = "200" /> <img src ="../images/ev_house_edit.png" width = "200" height ="300"/> <img src = "../images/ev_house_editpage.png" height = "300" width = "200" />
 
 ## 2.3 场景的使用
 
@@ -141,7 +149,9 @@
 
 第四步：查看刚刚创建的场景，并点击该场景，查看灯是否响应正确
 
-<img src = "../images/ev_light_setcolor2.png" height = "300" /> <img src = "../images/ev_light_scenes.png" height = "300" /> <img src = "../images/ev_scenes_addpage.png" height = "300" /> <img src = "../images/ev_scenes_addsuccess.png" height = "300" />
+<img src = "../images/ev_light_setcolor2.png" height = "300" width = "200" /> <img src = "../images/ev_light_scenes.png" width = "200" height = "300" /> <img src = "../images/ev_scenes_addpage.png" width = "200" height = "300" /> 
+
+<img src = "../images/ev_scenes_addsuccess.png" width = "200" height = "300" />
 
 ### 2.3.2 场景的修改
 
@@ -155,7 +165,7 @@
 
 第四步：控制修改后的场景，查看是否修改成功
 
-<img src = "../images/ev_scenes_editpage.png" height = "300" /> <img src = "../images/ev_scenes_editsave.png" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" height = "300" />
+<img src = "../images/ev_scenes_editpage.png" height = "300" width = "200" /> <img src = "../images/ev_scenes_editsave.png" width = "200" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" width = "200" height = "300" />
 
 ### 2.3.3 场景的删除
 
@@ -169,7 +179,7 @@
 
 备注：只有新增的场景才可以修改和删除，默认的四个场景：白光、自然光、暖光、微光，不可以修改和删除
 
-<img src = "../images/ev_scenes_editpage.png" height = "300" /> <img src = "../images/ev_light_scenes.png" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" height = "300" />
+<img src = "../images/ev_scenes_editpage.png" height = "300" width = "200" /> <img src = "../images/ev_light_scenes.png" width = "200"width = "200" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" width = "200" height = "300" />
 
 
 ## 2.4 日程的使用
@@ -188,7 +198,9 @@
 
 第四步：查看时程是否创建成功，并验证在该时刻，时程是否正确执行（如果去掉时程后面的勾选按钮或者禁用时程，该时程将不会执行） 
 
-<img src = "../images/ev_schedule_btn.png" height = "300" /> <img src = "../images/ev_schedule_addpage.png" height = "300" /> <img src = "../images/ev_schedule_addsave.png" height = "300" /> <img src = "../images/ev_schedule_addsuccess.png" height = "300" />
+<img src = "../images/ev_schedule_btn.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_addpage.png" width = "200" height = "300" /> <img src = "../images/ev_schedule_addsave.png" width = "200" height = "300" /> 
+
+<img src = "../images/ev_schedule_addsuccess.png" width = "200" height = "300" />
 
 ### 2.4.2 时程的修改
 
@@ -202,7 +214,7 @@
 
 第四步：查看时程是否修改成功，并在修改后的时间点执行（如果去掉时程后面的勾选按钮或者禁用时程，该时程将不会执行）
 
-<img src = "../images/ev_schedule_eidtpage.png" height = "300" /> <img src = "../images/ev_schedule_editsave.png" height = "300" /> <img src = "../images/ev_schedule_editsuccess.png" height = "300" />
+<img src = "../images/ev_schedule_eidtpage.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_editsave.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_editsuccess.png" height = "300" width = "200" />
 
 ### 2.4.3 时程的删除
 
@@ -214,13 +226,13 @@
 
 第三步：时程时程是否成功删除  
 
-<img src = "../images/ev_schedule_eidtpage.png" height = "300" /> <img src = "../images/ev_schedule_editsave.png" height = "300" /> <img src = "../images/ev_schedule_deletesu.png" height = "300" />
+<img src = "../images/ev_schedule_eidtpage.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_editsave.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_deletesu.png" height = "300" width = "200" />
 
 ## 2.5地点咨询
 
 进入地点页面，点击右下角的设置图标，选择i图标进入地点资讯页面
 
-<img src = "../images/ev_address_btn.png" height = "300" /> <img src = "../images/ev_addess_news1.png" height = "300" /> <img src = "../images/ev_schedule_news2.png" height = "300" />
+<img src = "../images/ev_address_btn.png" height = "300" width = "200" /> <img src = "../images/ev_addess_news1.png" height = "300" width = "200" /> <img src = "../images/ev_schedule_news2.png" height = "300" width = "200" />
 
 ### 2.5.1 地点名的修改
 
@@ -232,7 +244,7 @@
 
 第三步：查看地点名字是否修改成功
 
-<img src = "../images/ev_address_editpage.png" height = "300" /> <img src = "../images/ev_address_editsuccess.png" height = "300" />
+<img src = "../images/ev_address_editpage.png" height = "300" width = "200" /> <img src = "../images/ev_address_editsuccess.png" height = "300" width = "200" />
 
 ###  2.5.2 地点密码的查看
 
@@ -242,7 +254,7 @@
 
 第二：长按或者点击密码栏后的图标，查看地点密码
 
-<img src = "../images/ev_address_pwd.png" height = "300" />
+<img src = "../images/ev_address_pwd.png" height = "300" width = "200" />
 
 ###  2.5.3 查看地点资讯
 
@@ -252,7 +264,7 @@
 
 第二步：查看地点下的设备、房间、场景、时程信息
 
-<img src = "../images/ev_address_viewnews.png" height = "300" />
+<img src = "../images/ev_address_viewnews.png" height = "300" width = "200" />
 
 ### 2.5.4 汇出详细设定资料
 
@@ -264,7 +276,7 @@
 
 第三步：根据汇出方式发送或者保存
 
-<img src = "../images/ev_data_newspage.png" height = "300" /> <img src = "../images/ev_data_export.png" height = "300" />
+<img src = "../images/ev_data_newspage.png" height = "300" width = "200" /> <img src = "../images/ev_data_export.png" height = "300" width = "200"width = "200" />
 
 ### 2.5.5汇入详细设定资料
 
@@ -278,7 +290,7 @@
 
 第四步：查看导入的数据是否成功导入
 
- <img src = "../images/ev_data_importpage.png" height = "300" />  <img src = "../images/ev_data_importstart.png" height = "300" />  <img src = "../images/ev_data_import_success.png" height = "300" />
+ <img src = "../images/ev_data_importpage.png" height = "300" width = "200" />  <img src = "../images/ev_data_importstart.png" height = "300" width = "200" />  <img src = "../images/ev_data_import_success.png" height = "300" width = "200" />
 
 ### 2.5.6 分享地点密码
 
@@ -292,7 +304,9 @@
 
 第四步：手机B进入刚刚创建的地点，控制全区，查看设备是否有反应
 
-<img src = "../images/ev_address_sharepwd.png" height = "300" /> <img src = "../images/ev_adderss_qr.png" height = "300" /> <img src = "../images/ev_address_scanning.png" height = "300" /> <img src = "../images/ev_address_camera.png" height = "300" />
+<img src = "../images/ev_address_sharepwd.png" height = "300" width = "200" /> <img src = "../images/ev_adderss_qr.png" width = "200" height = "300" /> <img src = "../images/ev_address_scanning.png" height = "300" width = "200" /> 
+
+<img src = "../images/ev_address_camera.png" height = "300" width = "200" />
 
 ### 2.5.7 恢复原厂设定
 
@@ -306,7 +320,7 @@
 
 第四步：查看是否重置成功；如果失败，请检查设备是否上电，并再次尝试
 
-<img src = "../images/ev_set_reset.png" height = "300" /> <img src = "../images/ev_set_page.png" height = "300" /> <img src = "../images/ev_set_success.png" height = "300" />
+<img src = "../images/ev_set_reset.png" height = "300" width = "200" /> <img src = "../images/ev_set_page.png" height = "300" width = "200"width = "200" /> <img src = "../images/ev_set_success.png" height = "300" width = "200" />
 
 ### 2.5.8 删除地点
 
@@ -322,7 +336,7 @@
 
 第四步：查看地点是否成功删除
 
-<img src = "../images/ev_address_delete.png" height = "300" /> <img src = "../images/ev_address_desucess.png" height = "300" />
+<img src = "../images/ev_address_delete.png" height = "300" width = "200" /> <img src = "../images/ev_address_desucess.png" height = "300" width = "200" />
 
 ### 2.5.9 关于
 
@@ -334,7 +348,7 @@
 
 第三步：查看信息是否展示正确
 
-<img src = "../images/ev_about.png" height = "300" /> <img src = "../images/ev_about_page.png" height = "300" />
+<img src = "../images/ev_about.png" height = "300" width = "200" /> <img src = "../images/ev_about_page.png" height = "300" width = "200" />
 
 
 
