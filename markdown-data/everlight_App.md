@@ -19,7 +19,7 @@
 
 ## 2.1 设备的使用 
 
-### 2.1.1新增灯泡
+### 2.1.1 新增灯泡
 
 操作步骤：
 
@@ -67,7 +67,7 @@
 
 <img src = "../images/ev_light.png" height = "300" /> <img src = "../images/ev_light_set2.png" height = "300" /> <img src = "../images/ev_light_edit.png" height = "300" /> 
 
-##  2.2房间的使用
+##  2.2 房间的使用
 
 当设备下面添加有设备时，可以通过房间控制设备的开关和场景，操作步骤如下：
 
@@ -124,7 +124,7 @@
 
 <img src= "../images/ev_house_btn.png" height ="300" /> <img src ="../images/ev_house_edit.png" height ="300"/> <img src = "../images/ev_house_editpage.png" height = "300" />
 
-## 2.3场景的使用
+## 2.3 场景的使用
 
 ### 2.3.1 新增场景
 
@@ -173,6 +173,8 @@
 
 
 ## 2.4 日程的使用
+
+### 2.4.1 日程的新增
 
 新增场景之后，才可以使用日程，日程的创建如下：
 
