@@ -179,7 +179,7 @@
 
 备注：只有新增的场景才可以修改和删除，默认的四个场景：白光、自然光、暖光、微光，不可以修改和删除
 
-<img src = "../images/ev_scenes_editpage.png" height = "300" width = "200" /> <img src = "../images/ev_light_scenes.png" width = "200"width = "200" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" width = "200" height = "300" />
+<img src = "../images/ev_scenes_editpage.png" height = "300" width = "200" /> <img src = "../images/ev_light_scenes.png" width = "200" height = "300" /> <img src = "../images/ev_scenes_editsuccess.png" width = "200" height = "300" />
 
 
 ## 2.4 日程的使用
@@ -276,7 +276,7 @@
 
 第三步：根据汇出方式发送或者保存
 
-<img src = "../images/ev_data_newspage.png" height = "300" width = "200" /> <img src = "../images/ev_data_export.png" height = "300" width = "200"width = "200" />
+<img src = "../images/ev_data_newspage.png" height = "300" width = "200" /> <img src = "../images/ev_data_export.png" height = "300" width = "200" />
 
 ### 2.5.5汇入详细设定资料
 
@@ -320,13 +320,13 @@
 
 第四步：查看是否重置成功；如果失败，请检查设备是否上电，并再次尝试
 
-<img src = "../images/ev_set_reset.png" height = "300" width = "200" /> <img src = "../images/ev_set_page.png" height = "300" width = "200"width = "200" /> <img src = "../images/ev_set_success.png" height = "300" width = "200" />
+<img src = "../images/ev_set_reset.png" height = "300" width = "200" /> <img src = "../images/ev_set_page.png" height = "300" width = "200" /> <img src = "../images/ev_set_success.png" height = "300" width = "200" />
 
 ### 2.5.8 删除地点
 
 恢复原厂设定之后，就可以删除地点，具体操作如下
 
-操作步骤：
+操作步骤
 
 第一步：进入地点咨询页面
 
