@@ -2,20 +2,21 @@
 
 打开应用APP，点击”登入”按钮，然后进入地点界面，新增地点，操作步骤如下：
 
-**第一步：**点击左上角的“新增地点”，进入新增地点界面
+第一步：击左上角的“新增地点”，进入新增地点界面
 
-**第二步：**输入地点名字，然后点击右上角的保存按钮
+第二步：输入地点名字，然后点击右上角的保存按钮
 
-**第三步：**查看刚刚新建的地点是否在地点页正常展示
+第三步：查看刚刚新建的地点是否在地点页正常展示
 
 
 ![登录](../images/ev_login.png)  ![新增地点按钮](../images/ev_add_btn.png) ![输入参数](../images/ev_add_input.png) ![查看新增结果](../images/ev_add_view.png)
 
-#二、地点的使用
+# 二、地点的使用
 
 在地点页选择“地点一”，进入地点界面，下面介绍地点的使用
 
 ![地点界面](../images/ev_address_page.png)  ![地点页面设置](../images/ev_address_set.png)  
+
 
 ## 2.1 设备的使用 
 
@@ -37,7 +38,7 @@
 
 ![点击灯泡图标](../images/ev_light.png)  ![灯泡设置](../images/ev_light_add.png)  ![搜寻设备](../images/ev_light_search.png)  ![开始搜寻设备](../images/ev_light_start_search.png)  ![灯泡设置页面](../images/ev_light_newset.png) ![设置灯泡颜色](../images/ev_light_setcolor.png) 
 
-### 2.1.2 灯泡的修改
+###  2.1.2 灯泡的修改
 
 操作步骤：
 
@@ -49,9 +50,9 @@
 
 第四步：查看设备是否修改成功
 
-![点击灯泡图标](../images/ev_light.png) ![灯泡设置页面](../images/ev_light_set2  .png)  ![修改灯泡名称](../images/ev_light_edit.png) 
+![点击灯泡图标](../images/ev_light.png) ![灯泡设置页面](../images/ev_light_set2.png)  ![修改灯泡名称](../images/ev_light_edit.png) 
 
-### 2.1.3 灯泡的删除
+###  2.1.3 灯泡的删除
 
 当灯泡不再使用时，可以删除灯泡，操作步骤如下：
 
@@ -65,7 +66,7 @@
 
 第四步：查看设备是否删除成功
 
-![点击灯泡图标](../images/ev_light.png) ![灯泡设置页面](../images/ev_light_set2  .png)![灯泡设置页面](../images/ev_light_edit.png)  
+![点击灯泡图标](../images/ev_light.png) ![灯泡设置页面](../images/ev_light_set2.png)![灯泡设置页面](../images/ev_light_edit.png)  
 
 ##  2.2房间的使用
 
@@ -78,8 +79,8 @@
 第三步：控制默认的四个场景，看设备是否有反应
 
 第四步：进入灯泡，进入房间下的灯泡控制界面，控制灯泡的开关，查看灯泡是否反应正常
-
 备注：全区的使用和房间的使用模式一样，当控制全区时，房间的状态跟着改变
+
 ![控制颜色](../images/ev_light_setcolor2.png)  ![灯泡场景](../images/ev_light_scenes.png)   ![场景设置页面](../images/ev_light_controlscenes.png)  
 
 ### 2.2.1 新增房间
@@ -97,7 +98,7 @@
 第五步：控制房间一的开关，打开房间下的下拉图标，调节房间的冷暖色，查看灯是否有反应
 
 ![点击房子图标](../images/ev_light_house.png)![新增房间页面](../images/ev_house_addpage.png) ![新房间页面](../images/ev_housr_newhouse.png)
-![新房间创建成功](../images/ev_house_addsuccess.png) ![控制灯泡](../images/ev_house_ssetlight.png)![房间冷暖色](../images/ev_house_setcolor.png)
+![新房间创建成功](../images/ev_house_addsuccess.png) ![控制灯泡](../images/ev_house_setlight.png)![房间冷暖色](../images/ev_house_setcolor.png)
  
  
 ### 2.2.2 房间的修改
@@ -171,7 +172,7 @@
 
 备注：只有新增的场景才可以修改和删除，默认的四个场景：白光、自然光、暖光、微光，不可以修改和删除
 
-![地点页面](../images/ev_light_setcolor2.png)![场景](../images/ev_light_scenes.png)![删除场景成功](../images/ev_scenes_editsuccess.png)
+![场景](../images/ev_scenes_editpage.png)![场景](../images/ev_light_scenes.png)![删除场景成功](../images/ev_scenes_editsuccess.png)
 
 
 
@@ -191,7 +192,7 @@
 
 ![日程按钮](../images/ev_schedule_btn.png) ![日程页面](../images/ev_schedule_addpage.png) ![新增日程](../images/ev_schedule_addsave.png) ![新增日程成功](../images/ev_schedule_addsuccess.png) 
 
-### 2.4.2 日程的修改
+### 2.4.2 时程的修改
 
 操作步骤：
 
@@ -205,7 +206,7 @@
 
 ![修改日程](../images/ev_schedule_eidtpage.png)![保存修改](../images/ev_schedule_editsave.png)![修改成功](../images/ev_schedule_editsuccess.png)
 
-### 2.4.3 日程的删除
+### 2.4.3 时程的删除
 
 操作步骤：
 
@@ -243,7 +244,7 @@
 
 第二：长按或者点击密码栏后的图标，查看地点密码
 
-![地点秘密吗](../images/ev_address_pwdev_address_pwd.png)
+![地点密码](../images/ev_address_pwd.png)
 
 ###  2.5.3 查看地点资讯
 
@@ -335,7 +336,7 @@
 
 第三步：查看信息是否展示正确
 
-![关于](../images/ev_aboutev_about.png)![关于页面](../images/ev_about_page.png)
+![关于](../images/ev_about.png)![关于页面](../images/ev_about_page.png)
 
 
 

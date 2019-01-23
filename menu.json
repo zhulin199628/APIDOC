@@ -48,6 +48,10 @@
       {
         "subName": "Configurator 用户手册",
         "value": "Configurator.md"
+      },
+      {
+        "subName": "EverLight 用户手册",
+        "value": "everlight_App.md"
       }
     ]
   }
