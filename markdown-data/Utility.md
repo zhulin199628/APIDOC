@@ -99,7 +99,7 @@
 
 点击edit, 输入要修改的内容，最后点击 save
 
-!["修改用户属性"](../iamges/u_editUattr.jpg)
+!["修改用户属性"](../images/u_editUattr.jpg)
 
 ### 五、 设备分享
 
